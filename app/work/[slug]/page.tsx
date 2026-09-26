@@ -53,7 +53,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               ))}
             </div>
           </div>
-          <div className={p.wide ? "" : "lg:col-span-6"}>
+          <div className={p.wide ? "mx-auto w-full max-w-xl" : "lg:col-span-6"}>
             <Reveal delay={120}>
               <div className="img-frame overflow-hidden bg-cream">
                 <Image
@@ -62,7 +62,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   width={p.image.width}
                   height={p.image.height}
                   priority
-                  sizes={p.wide ? "(min-width: 1152px) 1104px, 100vw" : "(min-width: 1024px) 50vw, 100vw"}
+                  sizes={p.wide ? "(min-width: 640px) 576px, 100vw" : "(min-width: 1024px) 50vw, 100vw"}
                   className="h-auto w-full object-cover"
                 />
               </div>
@@ -81,20 +81,24 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               </Reveal>
             ) : null}
-            {p.gallery?.map((img, i) => (
-              <Reveal key={img.src} delay={200 + i * 80}>
-                <div className="img-frame mt-6 overflow-hidden bg-cream">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    width={img.width}
-                    height={img.height}
-                    sizes={p.wide ? "(min-width: 1152px) 1104px, 100vw" : "(min-width: 1024px) 50vw, 100vw"}
-                    className="h-auto w-full object-cover"
-                  />
-                </div>
-              </Reveal>
-            ))}
+            {p.gallery ? (
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                {p.gallery.map((img, i) => (
+                  <Reveal key={img.src} delay={200 + i * 80}>
+                    <div className="img-frame overflow-hidden bg-cream">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        width={img.width}
+                        height={img.height}
+                        sizes="(min-width: 640px) 288px, 50vw"
+                        className="h-auto w-full object-cover"
+                      />
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            ) : null}
           </div>
         </div>
         <ProjectNav slug={p.slug} />
