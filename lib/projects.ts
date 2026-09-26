@@ -20,10 +20,10 @@ export const featured = {
   summary:
     "A sustainable womenswear brand concept built end to end: creative direction, brand identity, market research, strategy, sourcing, production, logistics, marketing, and a three-year financial forecast.",
   image: {
-    src: "/images/capstone-customer.jpg",
-    alt: "Mischief Maison target customer in a grey turtleneck sweater dress and burgundy tights",
-    width: 516,
-    height: 865,
+    src: "/images/capstone-cover.jpg",
+    alt: "Crossed legs in strappy rhinestone heels resting on a black leather bench, Mischief Maison Studio cover image",
+    width: 950,
+    height: 1178,
   },
 };
 
