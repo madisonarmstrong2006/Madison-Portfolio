@@ -89,6 +89,7 @@ const mood = [
   { src: "/images/mood-6.jpg", alt: "Street style in a white shirt and dark denim, product line inspiration" },
   { src: "/images/mood-7.jpg", alt: "Satin column skirt with crisp shirting, product line inspiration" },
   { src: "/images/mood-8.jpg", alt: "Runway look with an open white shirt and a gold fringed hip scarf, product line inspiration" },
+  { src: "/images/mood-9.jpg", alt: "Velvet patchwork looks with knit beanies, product line inspiration" },
 ];
 
 export default function Capstone() {
@@ -186,9 +187,9 @@ export default function Capstone() {
             <div className="img-frame overflow-hidden">
               <Image
                 src="/images/capstone-customer.jpg"
-                alt="Mischief Maison Studio target customer: city style, effortless and timeless"
-                width={589}
-                height={987}
+                alt="Mischief Maison Studio target customer in a grey turtleneck sweater dress and burgundy tights, effortless and timeless"
+                width={516}
+                height={865}
                 className="h-auto w-full object-cover"
               />
             </div>
