@@ -10,6 +10,8 @@ export type Project = {
   extraImage?: { src: string; alt: string; width: number; height: number };
   /** Optional thumbnail for the work list card; falls back to `image` when omitted. */
   coverImage?: { src: string; alt: string; width: number; height: number };
+  /** Additional full-width pages shown after `image`, e.g. more pages of a document/deck. */
+  gallery?: { src: string; alt: string; width: number; height: number }[];
   wide?: boolean;
 };
 
@@ -68,11 +70,18 @@ export const projects: Project[] = [
       "Grounded in consumer data: 74% of consumers will pay more for fully traceable garments, and 54% of US and UK consumers want a sustainable fashion industry.",
     ],
     image: {
+      src: "/images/dpp-document.jpg",
+      alt: "Digital Product Passport (DPP) proposal document: what it is, adoption statistics, and the benefit to the target client",
+      width: 1545,
+      height: 1999,
+    },
+    coverImage: {
       src: "/images/dpp-cover.jpg",
       alt: "Runway show staged on a landfill, models in red and orange looks walking a path through waste",
       width: 736,
       height: 675,
     },
+    wide: true,
   },
   {
     slug: "chanel-timeline",
@@ -87,17 +96,32 @@ export const projects: Project[] = [
       "The project studied how the house stayed true to a chic, classic identity while evolving with each generation.",
     ],
     image: {
+      src: "/images/chanel-timeline-p1.jpg",
+      alt: "Chanel Timeline title page and brand history overview",
+      width: 1600,
+      height: 1600,
+    },
+    gallery: [
+      {
+        src: "/images/chanel-timeline-p2.jpg",
+        alt: "Chanel timeline, 1909 through WWII: the millinery shop, Chanel No. 5, and the wartime closure",
+        width: 1600,
+        height: 1600,
+      },
+      {
+        src: "/images/chanel-timeline-p3.jpg",
+        alt: "Chanel timeline, 1970s through 2000s: Alain Wertheimer, Karl Lagerfeld, and the fur-free decision",
+        width: 1600,
+        height: 1600,
+      },
+    ],
+    coverImage: {
       src: "/images/chanel-store.jpg",
       alt: "Historic Chanel storefront with period car",
       width: 592,
       height: 539,
     },
-    extraImage: {
-      src: "/images/chanel-no5.jpg",
-      alt: "Vintage Chanel No. 5 perfume advertisement",
-      width: 288,
-      height: 363,
-    },
+    wide: true,
   },
   {
     slug: "lookbook",

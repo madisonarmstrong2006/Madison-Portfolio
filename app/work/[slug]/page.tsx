@@ -81,6 +81,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               </Reveal>
             ) : null}
+            {p.gallery?.map((img, i) => (
+              <Reveal key={img.src} delay={200 + i * 80}>
+                <div className="img-frame mt-6 overflow-hidden bg-cream">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.width}
+                    height={img.height}
+                    sizes={p.wide ? "(min-width: 1152px) 1104px, 100vw" : "(min-width: 1024px) 50vw, 100vw"}
+                    className="h-auto w-full object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
         <ProjectNav slug={p.slug} />
