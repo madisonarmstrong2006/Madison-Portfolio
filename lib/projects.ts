@@ -59,10 +59,10 @@ export const projects: Project[] = [
       "Grounded in consumer data: 74% of consumers will pay more for fully traceable garments, and 54% of US and UK consumers want a sustainable fashion industry.",
     ],
     image: {
-      src: "/images/dpp.jpg",
-      alt: "Trench coat with a scannable digital product passport tag",
-      width: 303,
-      height: 409,
+      src: "/images/dpp-cover.jpg",
+      alt: "Runway show staged on a landfill, models in red and orange looks walking a path through waste",
+      width: 736,
+      height: 675,
     },
   },
   {
