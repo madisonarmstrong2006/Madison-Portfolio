@@ -10,7 +10,7 @@ const model = [
       "Take back pre-loved Mischief Maison garments from customers",
       "Repurpose fabrics into patchwork, panels, color blocks, and new silhouettes",
       "Reuse buttons and zippers; transform garments into accessory pieces",
-      "Release limited-edition, one-of-a-kind pieces",
+      "Use fabric for detailing: bows, pockets, trims, and designs",
     ],
   },
   {
@@ -19,6 +19,7 @@ const model = [
       "Partner with organizations supporting women entering the workforce",
       "Provide business attire to women who lack the resources for it",
       "Lend clothing for job interviews and key moments, then return it for the next woman",
+      "Second purpose: support women and create opportunities",
     ],
   },
   {
@@ -27,8 +28,31 @@ const model = [
       "Customers receive store credit for every pre-loved item they bring back",
       "Keeps the product line fresh, mysterious, and exclusive",
       "Contributes to a sustainable fashion industry and creates opportunities for women",
-      "Builds community, customer loyalty, and positive change",
+      "Builds community, customer loyalty, women's empowerment, and positive change",
     ],
+  },
+];
+
+const journey = [
+  {
+    stage: "Awareness",
+    body: "A woman is searching for outfit inspiration on Pinterest for her new job in fashion marketing. She clicks on a pin that catches her eye, then uses the shop search tool to find where the top is from. This redirects her to the Mischief Maison Studio website, where the top is for sale.",
+  },
+  {
+    stage: "Consideration",
+    body: "She starts browsing the store website and loves the timeless, classy, and fun style that resonates with her. She goes to the home page and is intrigued after reading about the sustainability and reimagine-or-redirect model.",
+  },
+  {
+    stage: "Purchase",
+    body: "She adds multiple pieces to her cart and checks out, ordering them directly through the website. She spends a good amount on just a few items because she believes they pair with pieces she already owns, and she appreciates the company's unique business model.",
+  },
+  {
+    stage: "Retention",
+    body: "She loves what she received and wears the pieces in and outside of work. She starts following the brand on Instagram, and wants to eventually bring in her old garments to support women getting into business, contribute to limited-edition pieces, and earn store credit for future shopping.",
+  },
+  {
+    stage: "Advocacy",
+    body: "She recommends the brand to coworkers and friends, telling them about the positive brand model and why they should consider investing in it. She posts images on her social media, tagging the company and captioning the posts with all the perks the brand offers.",
   },
 ];
 
@@ -197,6 +221,21 @@ export default function Capstone() {
                 ))}
               </div>
             </Reveal>
+          </div>
+        </div>
+
+        <div className="mt-24">
+          <Reveal>
+            <h2 className="label text-red-bright">Customer journey</h2>
+          </Reveal>
+          <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            {journey.map((j, i) => (
+              <Reveal key={j.stage} delay={i * 80} className="border-t border-paper/15 pt-5">
+                <span className="label text-paper/40">0{i + 1}</span>
+                <h5 className="font-display mt-2 text-xl italic tracking-tight">{j.stage}</h5>
+                <p className="mt-3 text-sm leading-relaxed text-paper/70">{j.body}</p>
+              </Reveal>
+            ))}
           </div>
         </div>
 
