@@ -8,6 +8,8 @@ export type Project = {
   body: string[];
   image: { src: string; alt: string; width: number; height: number };
   extraImage?: { src: string; alt: string; width: number; height: number };
+  /** Optional thumbnail for the work list card; falls back to `image` when omitted. */
+  coverImage?: { src: string; alt: string; width: number; height: number };
   wide?: boolean;
 };
 
@@ -40,11 +42,18 @@ export const projects: Project[] = [
       "Built a full customer archetype, Mason Livermoor, a 25-year-old Manhattan merchandising director who values sustainability and timeless style, and mapped her five-stage journey from discovering a piece on Pinterest through purchase, retention, and advocacy.",
     ],
     image: {
+      src: "/images/reflora-journey-map.jpg",
+      alt: "Reflora customer journey map document: Mason Livermoor's archetype profile and her five-stage awareness to advocacy journey",
+      width: 1728,
+      height: 2304,
+    },
+    coverImage: {
       src: "/images/reflora-cover.jpg",
       alt: "Woman in a blue sweater and brown trousers seated on the floor, Reflora customer archetype",
       width: 1200,
       height: 1600,
     },
+    wide: true,
   },
   {
     slug: "digital-product-passport",
