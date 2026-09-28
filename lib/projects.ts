@@ -141,6 +141,12 @@ export const projects: Project[] = [
       width: 1400,
       height: 1866,
     },
+    coverImage: {
+      src: "/images/lookbook-cover.jpg",
+      alt: "Margaret Howell Womens Collection Autumn Winter accordion-fold lookbook, fanned open",
+      width: 1003,
+      height: 1336,
+    },
     wide: true,
   },
 ];
