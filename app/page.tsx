@@ -25,11 +25,13 @@ export default function Home() {
             <FeaturedCard />
           </Reveal>
           <div className="mt-20 grid gap-14 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
-            {projects.slice(0, 2).map((p, i) => (
-              <Reveal key={p.slug} delay={i * 100}>
-                <WorkCard href={`/work/${p.slug}`} {...p} />
-              </Reveal>
-            ))}
+            {projects
+              .filter((p) => p.slug !== "reflora" && p.slug !== "digital-product-passport")
+              .map((p, i) => (
+                <Reveal key={p.slug} delay={i * 100}>
+                  <WorkCard href={`/work/${p.slug}`} {...p} image={p.coverImage ?? p.image} />
+                </Reveal>
+              ))}
           </div>
         </div>
       </section>
