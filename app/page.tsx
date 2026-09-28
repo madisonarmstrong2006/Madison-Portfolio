@@ -3,8 +3,6 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Reveal from "@/components/Reveal";
 import FeaturedCard from "@/components/FeaturedCard";
-import WorkCard from "@/components/WorkCard";
-import { projects } from "@/lib/projects";
 
 export default function Home() {
   return (
@@ -24,15 +22,6 @@ export default function Home() {
           <Reveal className="mt-14">
             <FeaturedCard />
           </Reveal>
-          <div className="mt-20 grid gap-14 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
-            {projects
-              .filter((p) => p.slug !== "reflora" && p.slug !== "digital-product-passport")
-              .map((p, i) => (
-                <Reveal key={p.slug} delay={i * 100}>
-                  <WorkCard href={`/work/${p.slug}`} {...p} image={p.coverImage ?? p.image} />
-                </Reveal>
-              ))}
-          </div>
         </div>
       </section>
       <section className="bg-cream px-6 py-24 sm:py-32">
