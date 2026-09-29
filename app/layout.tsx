@@ -17,11 +17,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Madison Armstrong | Fashion Merchandising, Editorial & Buying",
+    default: "Madison Armstrong | Merchandising, Editorial & Buying",
     template: "%s | Madison Armstrong",
   },
   description:
-    "Portfolio of Madison Armstrong: fashion merchandising, editorial, styling, and buying. Featuring Mischief Maison Studio, a sustainable womenswear brand concept developed through the Parsons Fashion Business Essentials capstone.",
+    "Portfolio of Madison Armstrong: merchandising, editorial, styling, and buying. Featuring Mischief Maison Studio, a sustainable womenswear brand concept developed through the Parsons Fashion Business Essentials capstone.",
 };
 
 export default function RootLayout({

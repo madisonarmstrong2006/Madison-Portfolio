@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="top" className="relative flex min-h-screen flex-col justify-center px-6 pt-24">
       <div className="mx-auto w-full max-w-6xl">
         <Reveal>
-          <p className="label text-red">Fashion Merchandising &middot; Editorial &middot; Styling &middot; Buying</p>
+          <p className="label text-red">Merchandising &middot; Editorial &middot; Styling &middot; Buying</p>
         </Reveal>
         <Reveal delay={120}>
           <h1 className="font-display mt-8 text-[13.5vw] leading-[0.95] tracking-[-0.02em] sm:text-[11vw] lg:text-[9.5rem]">
