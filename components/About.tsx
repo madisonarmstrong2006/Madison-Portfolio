@@ -7,7 +7,7 @@ const sections = [
   },
   {
     title: "Photography & Visual Storytelling",
-    body: "Photography has been a long-standing interest of mine and has strengthened my appreciation for visual storytelling. I am fascinated by the way composition, styling, lighting, and imagery can transform how a product or brand is perceived, and it complements my passion for fashion editorial and visual presentation.",
+    body: "Photography has been a long-standing interest of mine and has strengthened my appreciation for visual storytelling. I am fascinated by the way composition, styling, lighting, and imagery can transform how a product or brand is perceived.",
   },
   {
     title: "Curiosity & Perspective",
