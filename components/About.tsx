@@ -28,18 +28,18 @@ export default function About() {
         <div className="mt-14 grid gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <p className="font-display text-2xl leading-snug tracking-tight text-ink sm:text-[1.7rem]">
-              Pursuing opportunities across the fashion industry, with
-              particular interests in fashion merchandising, editorial,
-              styling, and buying.
+              Pursuing dynamic roles across the fashion, beauty, and lifestyle
+              industries with particular interests in merchandising, buying,
+              editorial work, and brand strategy.
             </p>
             <p className="mt-6 leading-relaxed text-ink-soft">
-              My experience includes working as a Merchandise Assistant to the
-              Team USA and LA28 Olympic Merchandise Director, completing the
-              Parsons Fashion Business Essentials course, and working as a
-              sales associate for fashion companies. These experiences have
-              allowed me to explore different sides of the industry while
-              developing my understanding of merchandising, branding, customer
-              experience, and the business behind fashion.
+              My experience includes supporting merchandise strategy for Team
+              USA and the LA28 Olympic Merchandise Director, completing the
+              Parsons Fashion Business Essentials course, and driving sales
+              and client engagement for leading retail brands. These
+              hands-on roles have given me a comprehensive understanding of
+              what connects products to consumers, blending creative
+              direction with retail analytics.
             </p>
           </Reveal>
           <div className="lg:col-span-7">
