@@ -130,7 +130,7 @@ export const projects: Project[] = [
     tag: "Styling & curation",
     date: "2026",
     summary:
-      "Nine complete outfits curated head to toe, mixing high and low, vintage and new.",
+      "A nine-look collection of head-to-toe styling, mixing high and low, vintage and new.",
     body: [
       "A nine-look styling exercise: complete outfits curated head to toe, mixing high and low, vintage and new.",
       "An exploration of how composition and pairing turn individual pieces into a point of view.",
