@@ -20,7 +20,8 @@ export default function Hero() {
             <p className="max-w-md text-lg leading-relaxed text-ink-soft">
               Creative, passionate, and driven. Building a career where
               creativity and strategy come together to shape compelling
-              fashion brands and connect with audiences.
+              fashion, beauty, and consumer brands that connect with
+              audiences.
             </p>
           </Reveal>
           <Reveal delay={320}>
