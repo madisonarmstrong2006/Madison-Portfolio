@@ -41,7 +41,7 @@ export const projects: Project[] = [
     summary:
       "A customer archetype and her five-stage journey, from discovering a piece on Pinterest to purchase, retention, and advocacy.",
     body: [
-      "Developed a customer archetype, Mason Livermore, a 25-year-old Manhattan merchandising director who values sustainability and timeless style. Mapped her customer journey from discovering a piece on Pinterest through purchase, retention, and brand advocacy.",
+      "Developed a customer archetype, Mason Livermoore, a 25-year-old Manhattan merchandising director who values sustainability and timeless style. Mapped her customer journey from discovering a piece on Pinterest through purchase, retention, and brand advocacy.",
     ],
     image: {
       src: "/images/reflora-journey-map.jpg",
