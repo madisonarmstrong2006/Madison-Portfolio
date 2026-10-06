@@ -63,6 +63,87 @@ body {
   transform: scale(1.015);
 }
 
+/* Blog post body text (MDX). Same idea as the .prose styles in Vercel's blog template. */
+.prose {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: var(--color-ink-soft);
+}
+.prose > * + * { margin-top: 1.5rem; }
+.prose h2,
+.prose h3 {
+  position: relative;
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  letter-spacing: -0.015em;
+  scroll-margin-top: 7rem;
+}
+.prose h2 { margin-top: 3.5rem; font-size: 1.875rem; line-height: 1.15; }
+.prose h3 { margin-top: 2.5rem; font-size: 1.375rem; line-height: 1.25; }
+.prose h2 + *, .prose h3 + * { margin-top: 1rem; }
+.prose .anchor {
+  position: absolute;
+  margin-left: -1.25rem;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.prose .anchor::after { content: "#"; color: var(--color-red); }
+.prose h2:hover .anchor, .prose h3:hover .anchor { opacity: 1; }
+.prose a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-red) 45%, transparent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 3px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.prose a:hover { color: var(--color-red); text-decoration-color: var(--color-red); }
+.prose strong { color: var(--color-ink); font-weight: 600; }
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li { padding-left: 0.25rem; }
+.prose li + li { margin-top: 0.6rem; }
+.prose li::marker { color: var(--color-red); }
+.prose blockquote {
+  border-left: 2px solid var(--color-red);
+  padding-left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+.prose blockquote p { margin: 0; }
+.prose hr { border: 0; border-top: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent); margin: 3rem 0; }
+.prose figure { margin: 2.5rem 0; }
+.prose figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-grey);
+}
+.prose .stat {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+}
+.prose .stat + .stat { margin-top: 0; }
+.prose .stat-value {
+  flex: none;
+  min-width: 5.5rem;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-red);
+}
+.prose .stat-text { font-size: 1rem; line-height: 1.6; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
