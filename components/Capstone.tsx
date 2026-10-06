@@ -182,19 +182,19 @@ export default function Capstone() {
           </div>
         </div>
 
-        <div className="mt-24 grid items-start gap-10 lg:grid-cols-12">
-          <Reveal className="lg:col-span-5">
-            <div className="img-frame overflow-hidden">
+        <div className="mt-24 grid grid-cols-12 items-stretch gap-4 sm:gap-8 lg:gap-10">
+          <Reveal className="col-span-5 h-full">
+            <div className="img-frame relative h-full min-h-[16rem] overflow-hidden">
               <Image
                 src="/images/capstone-customer.jpg"
                 alt="Mischief Maison Studio target customer in a grey turtleneck sweater dress and burgundy tights, effortless and timeless"
-                width={516}
-                height={865}
-                className="h-auto w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 40vw, 42vw"
+                className="object-cover"
               />
             </div>
           </Reveal>
-          <div className="lg:col-span-7">
+          <div className="col-span-7 min-w-0">
             <Reveal>
               <h2 className="label text-red-bright">Target customer</h2>
               <p className="font-display mt-4 text-2xl leading-snug tracking-tight sm:text-3xl">
@@ -203,7 +203,7 @@ export default function Capstone() {
               </p>
             </Reveal>
             <Reveal delay={100}>
-              <ul className="mt-8 grid gap-x-10 gap-y-3 text-sm leading-relaxed text-paper/70 sm:grid-cols-2">
+              <ul className="mt-8 grid gap-x-10 gap-y-3 text-xs leading-relaxed text-paper/70 sm:text-sm lg:grid-cols-2">
                 <li>Income $80&ndash;100k, city living</li>
                 <li>Style: classy, effortless, timeless, fun</li>
                 <li>Supports women&rsquo;s empowerment and philanthropy</li>
@@ -213,7 +213,7 @@ export default function Capstone() {
               </ul>
             </Reveal>
             <Reveal delay={160}>
-              <div className="mt-12 grid gap-6 sm:grid-cols-2">
+              <div className="mt-12 grid gap-6 lg:grid-cols-2">
                 {marketing.map((m) => (
                   <div key={m.title} className="border-t border-paper/15 pt-4">
                     <h5 className="label text-paper/85">{m.title}</h5>
