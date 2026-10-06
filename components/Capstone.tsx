@@ -183,18 +183,19 @@ export default function Capstone() {
         </div>
 
         <div className="mt-24 grid grid-cols-12 items-stretch gap-4 sm:gap-8 lg:gap-10">
-          <Reveal className="col-span-5 h-full">
-            <div className="img-frame relative h-full min-h-[16rem] overflow-hidden">
+          <Reveal className="col-span-5">
+            <div className="img-frame overflow-hidden">
               <Image
                 src="/images/capstone-customer.jpg"
                 alt="Mischief Maison Studio target customer in a grey turtleneck sweater dress and burgundy tights, effortless and timeless"
-                fill
+                width={516}
+                height={865}
                 sizes="(min-width: 1024px) 40vw, 42vw"
-                className="object-cover"
+                className="h-auto w-full"
               />
             </div>
           </Reveal>
-          <div className="col-span-7 min-w-0">
+          <div className="col-span-7 flex min-w-0 flex-col justify-between gap-6">
             <Reveal>
               <h2 className="label text-red-bright">Target customer</h2>
               <p className="font-display mt-4 text-2xl leading-snug tracking-tight sm:text-3xl">
