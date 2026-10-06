@@ -12,7 +12,7 @@ export default function FeaturedCard() {
           width={featured.image.width}
           height={featured.image.height}
           sizes="(min-width: 1024px) 40vw, 100vw"
-          className="aspect-[4/3] max-h-[55vh] w-full object-cover object-top lg:aspect-[4/5] lg:max-h-[65vh]"
+          className="aspect-[4/5] w-full object-cover object-top"
         />
       </div>
       <div className="lg:col-span-7">
