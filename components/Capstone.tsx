@@ -182,8 +182,8 @@ export default function Capstone() {
           </div>
         </div>
 
-        <div className="mt-24 grid grid-cols-12 items-stretch gap-4 sm:gap-8 lg:gap-10">
-          <Reveal className="col-span-5">
+        <div className="mt-24 grid grid-cols-12 gap-x-4 gap-y-10 sm:gap-x-8 lg:gap-x-10">
+          <Reveal className="col-span-5 row-start-1 lg:row-span-2">
             <div className="img-frame overflow-hidden">
               <Image
                 src="/images/capstone-customer.jpg"
@@ -195,7 +195,7 @@ export default function Capstone() {
               />
             </div>
           </Reveal>
-          <div className="col-span-7 flex min-w-0 flex-col justify-between gap-6">
+          <div className="col-span-7 col-start-6 row-start-1 min-w-0 self-center lg:self-start">
             <Reveal>
               <h2 className="label text-red-bright">Target customer</h2>
               <p className="font-display mt-4 text-2xl leading-snug tracking-tight sm:text-3xl">
@@ -213,8 +213,10 @@ export default function Capstone() {
                 <li>Cares about the economics of the fashion industry</li>
               </ul>
             </Reveal>
+          </div>
+          <div className="col-span-12 min-w-0 lg:col-span-7 lg:col-start-6 lg:row-start-2 lg:self-end">
             <Reveal delay={160}>
-              <div className="mt-12 grid gap-6 lg:grid-cols-2">
+              <div className="grid gap-6 sm:grid-cols-2">
                 {marketing.map((m) => (
                   <div key={m.title} className="border-t border-paper/15 pt-4">
                     <h5 className="label text-paper/85">{m.title}</h5>
