@@ -17,7 +17,7 @@ const sections = [
 
 export default function About() {
   return (
-    <section id="about" className="px-6 pb-20 pt-20 sm:pb-24 sm:pt-24">
+    <section id="about" className="px-6 pb-28 pt-20 sm:pb-36 sm:pt-24">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="flex items-baseline gap-6">

@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Hero />
       <Marquee />
-      <section className="px-6 py-20 sm:py-24">
+      <section className="px-6 py-28 sm:py-36">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-4">

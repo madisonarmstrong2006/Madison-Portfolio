@@ -25,7 +25,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!p) notFound();
 
   return (
-    <article className="px-6 pb-20 pt-32 sm:pb-24 sm:pt-40">
+    <article className="px-6 pb-28 pt-32 sm:pb-36 sm:pt-40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-grey">
