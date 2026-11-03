@@ -9,6 +9,7 @@ export default function WorkCard({
   date,
   summary,
   image,
+  onRed,
 }: {
   href: string;
   num: string;
@@ -17,6 +18,7 @@ export default function WorkCard({
   date: string;
   summary: string;
   image: { src: string; alt: string };
+  onRed?: boolean;
 }) {
   return (
     <Link href={href} className="group block">
@@ -32,15 +34,15 @@ export default function WorkCard({
       </div>
       <div className="mt-6">
         <div className="flex items-baseline justify-between gap-4">
-          <span className="label text-grey">{num}</span>
-          <span className="label text-grey">{date}</span>
+          <span className={`label ${onRed ? "text-paper/70" : "text-grey"}`}>{num}</span>
+          <span className={`label ${onRed ? "text-paper/70" : "text-grey"}`}>{date}</span>
         </div>
-        <h3 className="font-display mt-3 text-2xl tracking-tight transition-colors group-hover:text-red sm:text-[1.65rem]">
+        <h3 className={`font-display mt-3 text-2xl tracking-tight transition-colors sm:text-[1.65rem] ${onRed ? "text-paper group-hover:text-paper/70" : "group-hover:text-red"}`}>
           {title}
         </h3>
-        <p className="label mt-2 text-red">{tag}</p>
-        <p className="mt-4 max-w-prose text-sm leading-relaxed text-ink-soft">{summary}</p>
-        <span className="label mt-5 inline-flex items-center gap-2 text-ink group-hover:text-red transition-colors">
+        <p className={`label mt-2 ${onRed ? "text-cream" : "text-red"}`}>{tag}</p>
+        <p className={`mt-4 max-w-prose text-sm leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`}>{summary}</p>
+        <span className={`label mt-5 inline-flex items-center gap-2 transition-colors ${onRed ? "text-paper group-hover:text-paper/70" : "text-ink group-hover:text-red"}`}>
           View project
           <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </span>

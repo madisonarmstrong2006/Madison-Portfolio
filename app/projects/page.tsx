@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <>
+    <div className="min-h-screen bg-red text-paper">
       <PageHeader
+        onRed
         eyebrow="Projects"
-        title={<>Selected <span className="italic text-red">projects</span></>}
+        title={<>Selected <span className="italic text-paper/75">projects</span></>}
         intro="Brand building, customer research, retail technology, brand history, and styling."
       />
       <section className="px-6 pb-28 pt-16 sm:pb-36">
@@ -26,12 +27,12 @@ export default function WorkPage() {
           <div className="mt-20 grid gap-14 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
             {projects.map((p, i) => (
               <Reveal key={p.slug} delay={(i % 2) * 100}>
-                <WorkCard href={`/projects/${p.slug}`} {...p} image={p.coverImage ?? p.image} />
+                <WorkCard href={`/projects/${p.slug}`} {...p} onRed image={p.coverImage ?? p.image} />
               </Reveal>
             ))}
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
