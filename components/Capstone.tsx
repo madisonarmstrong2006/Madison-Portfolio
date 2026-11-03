@@ -94,7 +94,7 @@ const mood = [
 
 export default function Capstone() {
   return (
-    <section id="capstone" className="bg-ink text-paper px-6 pb-28 pt-32 sm:pb-36 sm:pt-40">
+    <section id="capstone" className="bg-ink text-paper px-6 pb-20 pt-32 sm:pb-24 sm:pt-40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-paper/50">
@@ -128,14 +128,14 @@ export default function Capstone() {
         </div>
 
         <Reveal>
-          <blockquote className="font-display mt-24 max-w-3xl text-2xl leading-snug tracking-tight text-paper/90 sm:text-3xl">
+          <blockquote className="font-display mt-16 max-w-3xl text-2xl leading-snug tracking-tight text-paper/90 sm:text-3xl">
             &ldquo;Our mission is to build a community of stylish women who
             support creativity, more equal opportunities for other women, and
             a more sustainable future.&rdquo;
           </blockquote>
         </Reveal>
 
-        <div className="mt-24 grid gap-10 md:grid-cols-2">
+        <div className="mt-16 grid gap-10 md:grid-cols-2">
           <Reveal>
             <h2 className="label text-red-bright">The problem</h2>
             <p className="mt-4 leading-relaxed text-paper/75">
@@ -159,7 +159,7 @@ export default function Capstone() {
           </Reveal>
         </div>
 
-        <div className="mt-24">
+        <div className="mt-16">
           <Reveal>
             <h2 className="label text-red-bright">The model</h2>
           </Reveal>
@@ -182,7 +182,7 @@ export default function Capstone() {
           </div>
         </div>
 
-        <div className="mt-24 grid grid-cols-12 gap-x-4 gap-y-10 sm:gap-x-8 lg:gap-x-10">
+        <div className="mt-16 grid grid-cols-12 gap-x-4 gap-y-10 sm:gap-x-8 lg:gap-x-10">
           <Reveal className="col-span-5 row-start-1 lg:row-span-2">
             <div className="img-frame overflow-hidden">
               <Image
@@ -228,7 +228,7 @@ export default function Capstone() {
           </div>
         </div>
 
-        <div className="mt-24">
+        <div className="mt-16">
           <Reveal>
             <h2 className="label text-red-bright">Customer journey</h2>
           </Reveal>
@@ -243,7 +243,7 @@ export default function Capstone() {
           </div>
         </div>
 
-        <div className="mt-24 grid gap-10 lg:grid-cols-12">
+        <div className="mt-16 grid gap-10 lg:grid-cols-12">
           <Reveal className="min-w-0 lg:col-span-7">
             <h2 className="label text-red-bright">Three-year revenue forecast</h2>
             <div className="mt-6 overflow-x-auto">
@@ -282,7 +282,7 @@ export default function Capstone() {
           </Reveal>
         </div>
 
-        <div className="mt-24">
+        <div className="mt-16">
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-4">
               <h2 className="label text-red-bright">Product line inspiration</h2>

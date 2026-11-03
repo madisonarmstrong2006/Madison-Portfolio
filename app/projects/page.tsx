@@ -19,12 +19,12 @@ export default function WorkPage() {
         title={<>Selected <span className="italic text-paper/75">projects</span></>}
         intro="Brand building, customer research, retail technology, brand history, and styling."
       />
-      <section className="px-6 pb-28 pt-16 sm:pb-36">
+      <section className="px-6 pb-20 pt-6 sm:pb-24">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <FeaturedCard />
           </Reveal>
-          <div className="mt-20 grid gap-14 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
+          <div className="mt-14 grid gap-12 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-16">
             {projects.map((p, i) => (
               <Reveal key={p.slug} delay={(i % 2) * 100}>
                 <WorkCard href={`/projects/${p.slug}`} {...p} onRed image={p.coverImage ?? p.image} />

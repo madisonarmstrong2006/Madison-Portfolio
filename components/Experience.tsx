@@ -89,7 +89,7 @@ export default function Experience() {
           ))}
         </div>
         <Reveal>
-          <div id="education" className="mt-24 flex items-baseline gap-6">
+          <div id="education" className="mt-16 flex items-baseline gap-6">
             <span className="label text-red">02</span>
             <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Education</h2>
           </div>
