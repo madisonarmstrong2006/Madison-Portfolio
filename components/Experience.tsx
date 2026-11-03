@@ -36,7 +36,7 @@ const work = [
 const education = [
   {
     org: "University of Colorado Boulder",
-    detail: "Communication, Media, Design & Information major, Media Studies minor. PRSSA club member, Delta Gamma.",
+    detail: "Communication, Media, Design & Information major, Media Studies minor. PRSSA club member, Delta Gamma, ROAM Boulder Magazine (Styling and Marketing).",
     dates: "Aug 2025 - Present",
   },
   {
