@@ -73,11 +73,11 @@ function Row({ title, org, dates, detail }: { title: string; org: string; dates:
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-cream px-6 py-28 sm:py-36">
+    <section id="experience" className="bg-cream px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="flex items-baseline gap-6">
-            <span className="label text-red">02</span>
+            <span className="label text-red">01</span>
             <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Experience</h2>
           </div>
         </Reveal>
@@ -90,7 +90,7 @@ export default function Experience() {
         </div>
         <Reveal>
           <div id="education" className="mt-24 flex items-baseline gap-6">
-            <span className="label text-red">03</span>
+            <span className="label text-red">02</span>
             <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Education</h2>
           </div>
         </Reveal>

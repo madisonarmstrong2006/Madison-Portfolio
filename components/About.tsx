@@ -32,15 +32,6 @@ export default function About() {
               industries with particular interests in merchandising, buying,
               editorial work, and brand strategy.
             </p>
-            <p className="mt-6 leading-relaxed text-ink-soft">
-              My experience includes supporting merchandise strategy for Team
-              USA and the LA28 Olympic Merchandise Director, completing the
-              Parsons Fashion Business Essentials course, and driving sales
-              and client engagement for leading retail brands. These
-              hands-on roles have given me a comprehensive understanding of
-              what connects products to consumers, blending creative
-              direction with retail analytics.
-            </p>
           </Reveal>
           <div className="lg:col-span-7">
             {sections.map((s, i) => (
