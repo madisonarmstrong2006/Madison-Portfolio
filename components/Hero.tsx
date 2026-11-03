@@ -26,10 +26,10 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={320}>
             <Link
-              href="/work"
+              href="/projects"
               className="label group inline-flex items-center gap-3 text-ink hover:text-red transition-colors"
             >
-              View the work
+              View the projects
               <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
             </Link>
           </Reveal>

@@ -4,7 +4,7 @@ import { featured } from "@/lib/projects";
 
 export default function FeaturedCard() {
   return (
-    <Link href={`/work/${featured.slug}`} className="group grid items-center grid-cols-12 gap-4 bg-ink p-4 text-paper sm:gap-8 sm:p-10 lg:gap-10">
+    <Link href={`/projects/${featured.slug}`} className="group grid items-center grid-cols-12 gap-4 bg-ink p-4 text-paper sm:gap-8 sm:p-10 lg:gap-10">
       <div className="img-frame overflow-hidden col-span-5">
         <Image
           src={featured.image.src}

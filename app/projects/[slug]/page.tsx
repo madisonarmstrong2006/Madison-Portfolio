@@ -29,7 +29,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-grey">
-            <Link href="/work" className="hover:text-red transition-colors">Work</Link>
+            <Link href="/projects" className="hover:text-red transition-colors">Projects</Link>
             <span className="mx-3 text-ink/30">/</span>
             <span className="text-red">{p.tag}</span>
           </p>

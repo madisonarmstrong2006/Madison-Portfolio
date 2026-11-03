@@ -14,8 +14,8 @@ export default function Home() {
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-4">
               <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Projects</h2>
-              <Link href="/work" className="label text-ink-soft hover:text-red transition-colors">
-                All work &rarr;
+              <Link href="/projects" className="label text-ink-soft hover:text-red transition-colors">
+                All projects &rarr;
               </Link>
             </div>
           </Reveal>

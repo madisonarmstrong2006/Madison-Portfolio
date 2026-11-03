@@ -98,7 +98,7 @@ export default function Capstone() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-paper/50">
-            <Link href="/work" className="hover:text-red-bright transition-colors">Work</Link>
+            <Link href="/projects" className="hover:text-red-bright transition-colors">Projects</Link>
             <span className="mx-3 text-paper/30">/</span>
             <span className="text-red-bright">Featured case study</span>
           </p>

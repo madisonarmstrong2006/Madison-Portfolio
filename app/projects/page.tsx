@@ -6,7 +6,7 @@ import WorkCard from "@/components/WorkCard";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Projects",
   description: "Case studies and projects by Madison Armstrong: Mischief Maison Studio, Reflora, a Digital Product Passport proposal, a Chanel brand timeline, and a lookbook.",
 };
 
@@ -14,8 +14,8 @@ export default function WorkPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Work"
-        title={<>Selected <span className="italic text-red">work</span></>}
+        eyebrow="Projects"
+        title={<>Selected <span className="italic text-red">projects</span></>}
         intro="Brand building, customer research, retail technology, brand history, and styling."
       />
       <section className="px-6 pb-28 pt-16 sm:pb-36">
@@ -26,7 +26,7 @@ export default function WorkPage() {
           <div className="mt-20 grid gap-14 sm:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
             {projects.map((p, i) => (
               <Reveal key={p.slug} delay={(i % 2) * 100}>
-                <WorkCard href={`/work/${p.slug}`} {...p} image={p.coverImage ?? p.image} />
+                <WorkCard href={`/projects/${p.slug}`} {...p} image={p.coverImage ?? p.image} />
               </Reveal>
             ))}
           </div>
