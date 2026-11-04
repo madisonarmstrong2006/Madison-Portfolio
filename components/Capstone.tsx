@@ -94,22 +94,22 @@ const mood = [
 
 export default function Capstone() {
   return (
-    <section id="capstone" className="bg-ink text-paper px-6 pb-28 pt-32 sm:pb-36 sm:pt-40">
+    <section id="capstone" className="bg-paper text-ink px-6 pb-28 pt-32 sm:pb-36 sm:pt-40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="label text-paper/50">
-            <Link href="/projects" className="hover:text-red-bright transition-colors">Projects</Link>
-            <span className="mx-3 text-paper/30">/</span>
-            <span className="text-red-bright">Featured case study</span>
+          <p className="label text-ink/50">
+            <Link href="/projects" className="hover:text-ink/60 transition-colors">Projects</Link>
+            <span className="mx-3 text-ink/30">/</span>
+            <span className="text-ink/60">Featured case study</span>
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-10 border-t border-paper/15 pt-14 lg:grid-cols-12">
+        <div className="mt-10 grid gap-10 border-t border-ink/15 pt-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
-            <h1 className="font-display text-5xl leading-[1.02] tracking-tight sm:text-6xl">
-              Mischief <span className="italic text-red-bright">Maison</span> Studio
+            <h1 className="display-caps text-4xl leading-[1.02] sm:text-5xl">
+              Mischief <span className="italic text-ink/60">Maison</span> Studio
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/75">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               A sustainable womenswear brand concept built end to end as the
               capstone for the Parsons Fashion Business Essentials course:
               creative direction, brand identity, market research, strategy,
@@ -119,16 +119,16 @@ export default function Capstone() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={120}>
             <dl className="grid grid-cols-2 gap-x-8 gap-y-6">
-              <div><dt className="label text-paper/50">Course</dt><dd className="mt-2 text-sm leading-relaxed">Parsons Fashion Business Essentials</dd></div>
-              <div><dt className="label text-paper/50">Year</dt><dd className="mt-2 text-sm leading-relaxed">2026</dd></div>
-              <div><dt className="label text-paper/50">Deliverable</dt><dd className="mt-2 text-sm leading-relaxed">Complete business concept and brand plan</dd></div>
-              <div><dt className="label text-paper/50">Values</dt><dd className="mt-2 text-sm leading-relaxed">Sustainability, women&rsquo;s empowerment, clothing lifecycle, creativity, timeless versatility</dd></div>
+              <div><dt className="label text-ink/50">Course</dt><dd className="mt-2 text-sm leading-relaxed">Parsons Fashion Business Essentials</dd></div>
+              <div><dt className="label text-ink/50">Year</dt><dd className="mt-2 text-sm leading-relaxed">2026</dd></div>
+              <div><dt className="label text-ink/50">Deliverable</dt><dd className="mt-2 text-sm leading-relaxed">Complete business concept and brand plan</dd></div>
+              <div><dt className="label text-ink/50">Values</dt><dd className="mt-2 text-sm leading-relaxed">Sustainability, women&rsquo;s empowerment, clothing lifecycle, creativity, timeless versatility</dd></div>
             </dl>
           </Reveal>
         </div>
 
         <Reveal>
-          <blockquote className="font-display mt-24 max-w-3xl text-2xl leading-snug tracking-tight text-paper/90 sm:text-3xl">
+          <blockquote className="font-display mt-24 max-w-3xl text-2xl leading-snug tracking-tight text-ink/90 sm:text-3xl">
             &ldquo;Our mission is to build a community of stylish women who
             support creativity, more equal opportunities for other women, and
             a more sustainable future.&rdquo;
@@ -137,8 +137,8 @@ export default function Capstone() {
 
         <div className="mt-24 grid gap-10 md:grid-cols-2">
           <Reveal>
-            <h2 className="label text-red-bright">The problem</h2>
-            <p className="mt-4 leading-relaxed text-paper/75">
+            <h2 className="label text-ink/60">The problem</h2>
+            <p className="mt-4 leading-relaxed text-ink/75">
               Fast fashion is taking over, creating unsustainable products and
               enormous waste. Women are seeking brands that value ethical
               products, sustainability, and timeless style rather than
@@ -148,8 +148,8 @@ export default function Capstone() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="label text-red-bright">The solution</h2>
-            <p className="mt-4 leading-relaxed text-paper/75">
+            <h2 className="label text-ink/60">The solution</h2>
+            <p className="mt-4 leading-relaxed text-ink/75">
               Ethical, sustainable, high-quality pieces with timeless, classy
               style, from everyday wear to business and formal. A reimagine-or-
               redirect model keeps the clothing lifecycle positive: pre-loved
@@ -161,17 +161,17 @@ export default function Capstone() {
 
         <div className="mt-24">
           <Reveal>
-            <h2 className="label text-red-bright">The model</h2>
+            <h2 className="label text-ink/60">The model</h2>
           </Reveal>
-          <div className="mt-8 grid gap-px bg-paper/15 md:grid-cols-3">
+          <div className="mt-8 grid gap-px bg-ink/15 md:grid-cols-3">
             {model.map((col, i) => (
-              <Reveal key={col.title} delay={i * 90} className="bg-ink">
+              <Reveal key={col.title} delay={i * 90} className="bg-paper">
                 <div className="h-full p-8">
                   <h5 className="font-display text-2xl italic tracking-tight">{col.title}</h5>
                   <ul className="mt-5 space-y-3">
                     {col.points.map((p) => (
-                      <li key={p} className="flex gap-3 text-sm leading-relaxed text-paper/70">
-                        <span aria-hidden="true" className="mt-[0.4rem] h-1 w-1 shrink-0 rounded-full bg-red-bright" />
+                      <li key={p} className="flex gap-3 text-sm leading-relaxed text-ink/70">
+                        <span aria-hidden="true" className="mt-[0.4rem] h-1 w-1 shrink-0 rounded-full bg-ink/50" />
                         {p}
                       </li>
                     ))}
@@ -197,14 +197,14 @@ export default function Capstone() {
           </Reveal>
           <div className="col-span-7 col-start-6 row-start-1 min-w-0 self-center lg:self-start">
             <Reveal>
-              <h2 className="label text-red-bright">Target customer</h2>
+              <h2 className="label text-ink/60">Target customer</h2>
               <p className="font-display mt-4 text-2xl leading-snug tracking-tight sm:text-3xl">
                 Urban, career-driven women, mid-twenties to forty, who value
                 quality and sustainability over fast fashion.
               </p>
             </Reveal>
             <Reveal delay={100}>
-              <ul className="mt-8 grid gap-x-10 gap-y-3 text-xs leading-relaxed text-paper/70 sm:text-sm lg:grid-cols-2">
+              <ul className="mt-8 grid gap-x-10 gap-y-3 text-xs leading-relaxed text-ink/70 sm:text-sm lg:grid-cols-2">
                 <li>Income $80&ndash;100k, city living</li>
                 <li>Style: classy, effortless, timeless, fun</li>
                 <li>Supports women&rsquo;s empowerment and philanthropy</li>
@@ -218,9 +218,9 @@ export default function Capstone() {
             <Reveal delay={160}>
               <div className="grid gap-6 sm:grid-cols-2">
                 {marketing.map((m) => (
-                  <div key={m.title} className="border-t border-paper/15 pt-4">
-                    <h5 className="label text-paper/85">{m.title}</h5>
-                    <p className="mt-2 text-sm leading-relaxed text-paper/60">{m.body}</p>
+                  <div key={m.title} className="border-t border-ink/15 pt-4">
+                    <h5 className="label text-ink/85">{m.title}</h5>
+                    <p className="mt-2 text-sm leading-relaxed text-ink/60">{m.body}</p>
                   </div>
                 ))}
               </div>
@@ -230,14 +230,14 @@ export default function Capstone() {
 
         <div className="mt-24">
           <Reveal>
-            <h2 className="label text-red-bright">Customer journey</h2>
+            <h2 className="label text-ink/60">Customer journey</h2>
           </Reveal>
           <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {journey.map((j, i) => (
-              <Reveal key={j.stage} delay={i * 80} className="border-t border-paper/15 pt-5">
-                <span className="label text-paper/40">0{i + 1}</span>
+              <Reveal key={j.stage} delay={i * 80} className="border-t border-ink/15 pt-5">
+                <span className="label text-ink/40">0{i + 1}</span>
                 <h5 className="font-display mt-2 text-xl italic tracking-tight">{j.stage}</h5>
-                <p className="mt-3 text-sm leading-relaxed text-paper/70">{j.body}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink/70">{j.body}</p>
               </Reveal>
             ))}
           </div>
@@ -245,11 +245,11 @@ export default function Capstone() {
 
         <div className="mt-24 grid gap-10 lg:grid-cols-12">
           <Reveal className="min-w-0 lg:col-span-7">
-            <h2 className="label text-red-bright">Three-year revenue forecast</h2>
+            <h2 className="label text-ink/60">Three-year revenue forecast</h2>
             <div className="mt-6 overflow-x-auto">
               <table className="w-full min-w-[520px] text-left text-sm">
                 <thead>
-                  <tr className="label text-paper/50">
+                  <tr className="label text-ink/50">
                     <th className="py-3 pr-4 font-medium">Metric</th>
                     <th className="py-3 pr-4 font-medium">Year 1</th>
                     <th className="py-3 pr-4 font-medium">Year 2</th>
@@ -258,11 +258,11 @@ export default function Capstone() {
                 </thead>
                 <tbody>
                   {forecast.map((row) => (
-                    <tr key={row[0]} className="border-t border-paper/10">
-                      <td className="py-3 pr-4 text-paper/80">{row[0]}</td>
-                      <td className="py-3 pr-4 tabular-nums text-paper/60">{row[1]}</td>
-                      <td className="py-3 pr-4 tabular-nums text-paper/60">{row[2]}</td>
-                      <td className="py-3 tabular-nums text-paper/90">{row[3]}</td>
+                    <tr key={row[0]} className="border-t border-ink/10">
+                      <td className="py-3 pr-4 text-ink/80">{row[0]}</td>
+                      <td className="py-3 pr-4 tabular-nums text-ink/60">{row[1]}</td>
+                      <td className="py-3 pr-4 tabular-nums text-ink/60">{row[2]}</td>
+                      <td className="py-3 tabular-nums text-ink/90">{row[3]}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -270,12 +270,12 @@ export default function Capstone() {
             </div>
           </Reveal>
           <Reveal className="lg:col-span-5" delay={100}>
-            <h2 className="label text-red-bright">Funding request: $150,000</h2>
+            <h2 className="label text-ink/60">Funding request: $150,000</h2>
             <ul className="mt-6 space-y-4">
               {funding.map((f) => (
-                <li key={f.label} className="flex items-baseline justify-between gap-4 border-t border-paper/10 pt-4">
-                  <span className="text-sm text-paper/80">{f.label}</span>
-                  <span className="text-sm tabular-nums text-paper/60">{f.amount} &middot; {f.pct}</span>
+                <li key={f.label} className="flex items-baseline justify-between gap-4 border-t border-ink/10 pt-4">
+                  <span className="text-sm text-ink/80">{f.label}</span>
+                  <span className="text-sm tabular-nums text-ink/60">{f.amount} &middot; {f.pct}</span>
                 </li>
               ))}
             </ul>
@@ -285,8 +285,8 @@ export default function Capstone() {
         <div className="mt-24">
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-4">
-              <h2 className="label text-red-bright">Product line inspiration</h2>
-              <p className="label text-paper/40">Mood board from the capstone</p>
+              <h2 className="label text-ink/60">Product line inspiration</h2>
+              <p className="label text-ink/40">Mood board from the capstone</p>
             </div>
           </Reveal>
           <div className="mt-8 columns-2 gap-4 sm:columns-3 [&>*]:mb-4">

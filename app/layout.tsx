@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Bodoni_Moda, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const fraunces = Fraunces({
+const fraunces = Bodoni_Moda({
   subsets: ["latin"],
   variable: "--font-fraunces",
   style: ["normal", "italic"],
+  weight: ["400", "500"],
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {

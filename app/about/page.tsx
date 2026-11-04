@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageHeader eyebrow="About" title={<>Madison <span className="italic text-red">Armstrong</span></>} />
+      <PageHeader eyebrow="About" title={<>Madison <span className="italic text-ink/70">Armstrong</span></>} />
       <About />
     </>
   );

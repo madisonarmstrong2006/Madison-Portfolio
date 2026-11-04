@@ -76,9 +76,9 @@ export default function Experience() {
     <section id="experience" className="bg-cream px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="flex items-baseline gap-6">
-            <span className="label text-red">01</span>
-            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Experience</h2>
+          <div className="border-t border-ink/50 pt-4">
+            <div className="flex items-baseline justify-between"><span className="label text-ink">01</span><span className="label text-grey">Work</span></div>
+            <h2 className="display-caps mt-8 text-[clamp(2.25rem,6vw,4.5rem)] leading-[0.95]">Experience</h2>
           </div>
         </Reveal>
         <div className="mt-14">
@@ -89,9 +89,9 @@ export default function Experience() {
           ))}
         </div>
         <Reveal>
-          <div id="education" className="mt-24 flex items-baseline gap-6">
-            <span className="label text-red">02</span>
-            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Education</h2>
+          <div id="education" className="mt-24 border-t border-ink/50 pt-4">
+            <div className="flex items-baseline justify-between"><span className="label text-ink">02</span><span className="label text-grey">Study</span></div>
+            <h2 className="display-caps mt-8 text-[clamp(2.25rem,6vw,4.5rem)] leading-[0.95]">Education</h2>
           </div>
         </Reveal>
         <div className="mt-14">
