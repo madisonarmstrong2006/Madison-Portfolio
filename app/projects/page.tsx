@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <div className="bg-oxblood text-ink" style={{ zoom: 0.875 }}>
+    <div className="bg-red text-paper" style={{ zoom: 0.875 }}>
       <PageHeader
         onRed
         compact
         eyebrow="Projects"
-        title={<>Selected <span className="italic text-ink/70">projects</span></>}
+        title={<>Selected <span className="italic text-paper/75">projects</span></>}
         intro="Brand building, customer research, retail technology, brand history, and styling."
       />
       <section className="px-6 pb-20 pt-6 sm:pb-24">

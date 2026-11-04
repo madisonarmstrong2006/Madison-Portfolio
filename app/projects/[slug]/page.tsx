@@ -31,13 +31,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <p className="label text-grey">
             <Link href="/projects" className="hover:text-red transition-colors">Projects</Link>
             <span className="mx-3 text-ink/30">/</span>
-            <span className="text-ink/60">{p.tag}</span>
+            <span className="text-red">{p.tag}</span>
           </p>
         </Reveal>
         <div className={`mt-10 grid gap-12 border-t border-ink/15 pt-14 ${p.wide ? "" : "lg:grid-cols-12"}`}>
           <div className={p.wide ? "" : "lg:col-span-6"}>
             <Reveal>
-              <h1 className="display-caps text-4xl leading-[1.02] sm:text-5xl">{p.title}</h1>
+              <h1 className="font-display text-5xl leading-[1.02] tracking-tight sm:text-6xl">{p.title}</h1>
             </Reveal>
             <Reveal delay={100}>
               <dl className="mt-10 grid max-w-md grid-cols-2 gap-x-8 gap-y-6">

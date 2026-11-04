@@ -4,14 +4,14 @@ export default function PageHeader({ eyebrow, title, intro, onRed, compact }: { 
   return (
     <div className={`mx-auto max-w-6xl px-6 ${compact ? "pt-24 sm:pt-28" : "pt-36 sm:pt-44"}`}>
       <Reveal>
-        <p className={`label ${onRed ? "text-ink/70" : "text-ink/60"}`}>{eyebrow}</p>
+        <p className={`label ${onRed ? "text-paper/70" : "text-red"}`}>{eyebrow}</p>
       </Reveal>
       <Reveal delay={100}>
-        <h1 className={`display-caps leading-[0.98] ${compact ? "mt-4 text-4xl sm:text-5xl" : "mt-6 text-[clamp(2.75rem,8vw,6.5rem)]"}`}>{title}</h1>
+        <h1 className={`font-display leading-[0.98] tracking-[-0.02em] ${compact ? "mt-4 text-5xl sm:text-6xl" : "mt-6 text-6xl sm:text-8xl"}`}>{title}</h1>
       </Reveal>
       {intro ? (
         <Reveal delay={180}>
-          <p className={`${compact ? "mt-5" : "mt-8"} max-w-xl text-lg leading-relaxed ${onRed ? "text-ink/85" : "text-ink-soft"}`}>{intro}</p>
+          <p className={`${compact ? "mt-5" : "mt-8"} max-w-xl text-lg leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`}>{intro}</p>
         </Reveal>
       ) : null}
     </div>

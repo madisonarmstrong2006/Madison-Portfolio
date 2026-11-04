@@ -20,9 +20,9 @@ export default function About() {
     <section id="about" className="px-6 pb-28 pt-20 sm:pb-36 sm:pt-24">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="border-t border-ink/50 pt-4">
-            <div className="flex items-baseline justify-between"><span className="label text-ink">01</span><span className="label text-grey">Biography</span></div>
-            <h2 className="display-caps mt-8 text-[clamp(2.25rem,6vw,4.5rem)] leading-[0.95]">Bio</h2>
+          <div className="flex items-baseline gap-6">
+            <span className="label text-red">01</span>
+            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Bio</h2>
           </div>
         </Reveal>
         <div className="mt-14 grid gap-14 lg:grid-cols-12">
@@ -37,7 +37,7 @@ export default function About() {
             {sections.map((s, i) => (
               <Reveal key={s.title} delay={i * 90}>
                 <div className="border-t border-ink/15 py-8 first:pt-0 first:border-t-0">
-                  <h3 className="label text-ink/60">{s.title}</h3>
+                  <h3 className="label text-red">{s.title}</h3>
                   <p className="mt-4 leading-relaxed text-ink-soft">{s.body}</p>
                 </div>
               </Reveal>
