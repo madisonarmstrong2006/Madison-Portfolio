@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
 import Reveal from "@/components/Reveal";
 import PageHeader from "@/components/PageHeader";
 import About from "@/components/About";
@@ -12,15 +11,15 @@ import { projects } from "@/lib/projects";
 export default function Home() {
   return (
     <>
+      <div className="theme-dark">
       <Hero />
-      <Marquee />
 
       <section id="about" className="scroll-mt-14">
         <PageHeader section eyebrow="About" title="About Me" />
         <About />
       </section>
 
-      <section id="experience" className="scroll-mt-14 bg-cream/50">
+      <section id="experience" className="scroll-mt-14 bg-cream">
         <PageHeader
           section
           eyebrow="Experience"
@@ -29,6 +28,7 @@ export default function Home() {
         />
         <Experience />
       </section>
+      </div>
 
       <section id="projects" className="scroll-mt-14 bg-red text-paper">
         <div style={{ zoom: 0.875 }}>
