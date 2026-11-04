@@ -4,14 +4,14 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-4 text-paper/50 sm:flex-row sm:items-center sm:justify-between">
         <p className="label">Madison Armstrong &copy; 2026</p>
         <div className="flex gap-6">
-          <a href="mailto:mearmstrong2006@gmail.com" className="label hover:text-red-bright transition-colors">
+          <a href="mailto:mearmstrong2006@gmail.com" className="label hover:text-paper/60 transition-colors">
             Email
           </a>
           <a
             href="https://www.linkedin.com/in/madison-armstrongsf"
             target="_blank"
             rel="noopener noreferrer"
-            className="label hover:text-red-bright transition-colors"
+            className="label hover:text-paper/60 transition-colors"
           >
             LinkedIn
           </a>
