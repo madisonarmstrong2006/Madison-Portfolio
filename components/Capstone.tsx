@@ -98,16 +98,16 @@ export default function Capstone() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-paper/50">
-            <Link href="/projects" className="hover:text-paper/60 transition-colors">Projects</Link>
+            <Link href="/projects" className="hover:text-red-bright transition-colors">Projects</Link>
             <span className="mx-3 text-paper/30">/</span>
-            <span className="text-paper/60">Featured case study</span>
+            <span className="text-red-bright">Featured case study</span>
           </p>
         </Reveal>
 
         <div className="mt-10 grid gap-10 border-t border-paper/15 pt-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <h1 className="font-display text-5xl leading-[1.02] tracking-tight sm:text-6xl">
-              Mischief <span className="italic text-paper/60">Maison</span> Studio
+              Mischief <span className="italic text-red-bright">Maison</span> Studio
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/75">
               A sustainable womenswear brand concept built end to end as the
@@ -137,7 +137,7 @@ export default function Capstone() {
 
         <div className="mt-24 grid gap-10 md:grid-cols-2">
           <Reveal>
-            <h2 className="label text-paper/60">The problem</h2>
+            <h2 className="label text-red-bright">The problem</h2>
             <p className="mt-4 leading-relaxed text-paper/75">
               Fast fashion is taking over, creating unsustainable products and
               enormous waste. Women are seeking brands that value ethical
@@ -148,7 +148,7 @@ export default function Capstone() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="label text-paper/60">The solution</h2>
+            <h2 className="label text-red-bright">The solution</h2>
             <p className="mt-4 leading-relaxed text-paper/75">
               Ethical, sustainable, high-quality pieces with timeless, classy
               style, from everyday wear to business and formal. A reimagine-or-
@@ -161,7 +161,7 @@ export default function Capstone() {
 
         <div className="mt-24">
           <Reveal>
-            <h2 className="label text-paper/60">The model</h2>
+            <h2 className="label text-red-bright">The model</h2>
           </Reveal>
           <div className="mt-8 grid gap-px bg-paper/15 md:grid-cols-3">
             {model.map((col, i) => (
@@ -171,7 +171,7 @@ export default function Capstone() {
                   <ul className="mt-5 space-y-3">
                     {col.points.map((p) => (
                       <li key={p} className="flex gap-3 text-sm leading-relaxed text-paper/70">
-                        <span aria-hidden="true" className="mt-[0.4rem] h-1 w-1 shrink-0 rounded-full bg-paper/50" />
+                        <span aria-hidden="true" className="mt-[0.4rem] h-1 w-1 shrink-0 rounded-full bg-red-bright" />
                         {p}
                       </li>
                     ))}
@@ -197,7 +197,7 @@ export default function Capstone() {
           </Reveal>
           <div className="col-span-7 col-start-6 row-start-1 min-w-0 self-center lg:self-start">
             <Reveal>
-              <h2 className="label text-paper/60">Target customer</h2>
+              <h2 className="label text-red-bright">Target customer</h2>
               <p className="font-display mt-4 text-2xl leading-snug tracking-tight sm:text-3xl">
                 Urban, career-driven women, mid-twenties to forty, who value
                 quality and sustainability over fast fashion.
@@ -230,7 +230,7 @@ export default function Capstone() {
 
         <div className="mt-24">
           <Reveal>
-            <h2 className="label text-paper/60">Customer journey</h2>
+            <h2 className="label text-red-bright">Customer journey</h2>
           </Reveal>
           <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {journey.map((j, i) => (
@@ -245,7 +245,7 @@ export default function Capstone() {
 
         <div className="mt-24 grid gap-10 lg:grid-cols-12">
           <Reveal className="min-w-0 lg:col-span-7">
-            <h2 className="label text-paper/60">Three-year revenue forecast</h2>
+            <h2 className="label text-red-bright">Three-year revenue forecast</h2>
             <div className="mt-6 overflow-x-auto">
               <table className="w-full min-w-[520px] text-left text-sm">
                 <thead>
@@ -270,7 +270,7 @@ export default function Capstone() {
             </div>
           </Reveal>
           <Reveal className="lg:col-span-5" delay={100}>
-            <h2 className="label text-paper/60">Funding request: $150,000</h2>
+            <h2 className="label text-red-bright">Funding request: $150,000</h2>
             <ul className="mt-6 space-y-4">
               {funding.map((f) => (
                 <li key={f.label} className="flex items-baseline justify-between gap-4 border-t border-paper/10 pt-4">
@@ -285,7 +285,7 @@ export default function Capstone() {
         <div className="mt-24">
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-4">
-              <h2 className="label text-paper/60">Product line inspiration</h2>
+              <h2 className="label text-red-bright">Product line inspiration</h2>
               <p className="label text-paper/40">Mood board from the capstone</p>
             </div>
           </Reveal>
