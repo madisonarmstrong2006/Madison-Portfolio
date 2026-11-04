@@ -12,27 +12,6 @@
   --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
-:root {
-  --strip: #161412;
-  --card-bg: #161412;
-  --card-fg: #f4f0e9;
-}
-
-/* Dark home page: charcoal, warm white, light slate, muted burgundy */
-.theme-dark {
-  --color-paper: #111111;
-  --color-ink: #f9f9f9;
-  --color-ink-soft: #cfcfcf;
-  --color-red: #e5e5e5;
-  --color-red-bright: #e5e5e5;
-  --color-grey: #9b9b9b;
-  --color-cream: #1b1b1b;
-  --strip: #4a1521;
-  --card-bg: #4a1521;
-  --card-fg: #f9f9f9;
-}
-body:has(.theme-dark) { background-color: #111111; }
-
 html {
   scroll-behavior: smooth;
 }
