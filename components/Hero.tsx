@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 
@@ -9,11 +10,21 @@ export default function Hero() {
           <p className="label text-red">Merchandising &middot; Editorial &middot; Styling &middot; Buying</p>
         </Reveal>
         <Reveal delay={120}>
-          <h1 className="font-display text-[13.5vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(11vw,17vh)] lg:text-[min(9.5rem,17vh)]">
-            Madison
-            <br />
-            <span className="italic text-red">Armstrong</span>
-          </h1>
+          <div className="font-display flex items-end gap-[0.14em] text-[13.5vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(11vw,17vh)] lg:text-[min(9.5rem,17vh)]">
+            <Image
+              src="/images/madison-outline.png"
+              alt="Cutout photo of Madison Armstrong looking over her shoulder with a leather tote bag"
+              width={489}
+              height={1400}
+              priority
+              className="h-[2.7em] w-auto shrink-0"
+            />
+            <h1>
+              Madison
+              <br />
+              <span className="italic text-red">Armstrong</span>
+            </h1>
+          </div>
         </Reveal>
         <div className="flex flex-col gap-8 border-t border-ink/15 pt-8 sm:flex-row sm:items-end sm:justify-between">
           <Reveal delay={240}>
