@@ -13,8 +13,8 @@ export default function Hero() {
           <div className="font-display flex items-end gap-[0.14em] text-[13.5vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(11vw,17vh)] lg:text-[min(9.5rem,17vh)]">
             <Image
               src="/images/madison-outline.png"
-              alt="Cutout photo of Madison Armstrong looking over her shoulder with a leather tote bag"
-              width={489}
+              alt="Cutout photo of Madison Armstrong looking over her shoulder in a fringe jacket and flared jeans"
+              width={345}
               height={1400}
               priority
               className="h-[2.7em] w-auto shrink-0"
