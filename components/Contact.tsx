@@ -1,12 +1,13 @@
 import Reveal from "./Reveal";
 
-export default function Contact() {
+export default function Contact({ section }: { section?: boolean }) {
+  const Heading = section ? "h2" : "h1";
   return (
-    <section id="contact" className="min-h-[80vh] bg-ink px-6 pb-28 pt-36 text-paper sm:pb-36 sm:pt-44">
+    <section id="contact" className="min-h-[80vh] bg-ink px-6 pb-28 pt-36 text-paper sm:pb-36 sm:pt-44 scroll-mt-0">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-red-bright">Contact</p>
-          <h1 className="font-display mt-6 text-6xl leading-[0.98] tracking-[-0.02em] sm:text-8xl">Say hello</h1>
+          <Heading className="font-display mt-6 text-6xl leading-[0.98] tracking-[-0.02em] sm:text-8xl">Say hello</Heading>
         </Reveal>
         <Reveal delay={100}>
           <p className="font-display mt-12 max-w-3xl text-3xl leading-tight tracking-tight sm:text-5xl">

@@ -1,13 +1,14 @@
 import Reveal from "./Reveal";
 
-export default function PageHeader({ eyebrow, title, intro, onRed, compact }: { eyebrow: string; title: React.ReactNode; intro?: string; onRed?: boolean; compact?: boolean }) {
+export default function PageHeader({ eyebrow, title, intro, onRed, compact, section }: { section?: boolean; eyebrow: string; title: React.ReactNode; intro?: string; onRed?: boolean; compact?: boolean }) {
+  const Heading = section ? "h2" : "h1";
   return (
-    <div className={`mx-auto max-w-6xl px-6 ${compact ? "pt-24 sm:pt-28" : "pt-36 sm:pt-44"}`}>
+    <div className={`mx-auto max-w-6xl px-6 ${section ? "pt-24 sm:pt-28" : compact ? "pt-24 sm:pt-28" : "pt-36 sm:pt-44"}`}>
       <Reveal>
         <p className={`label ${onRed ? "text-paper/70" : "text-red"}`}>{eyebrow}</p>
       </Reveal>
       <Reveal delay={100}>
-        <h1 className={`font-display leading-[0.98] tracking-[-0.02em] ${compact ? "mt-4 text-5xl sm:text-6xl" : "mt-6 text-6xl sm:text-8xl"}`}>{title}</h1>
+        <Heading className={`font-display leading-[0.98] tracking-[-0.02em] ${compact ? "mt-4 text-5xl sm:text-6xl" : "mt-6 text-6xl sm:text-8xl"}`}>{title}</Heading>
       </Reveal>
       {intro ? (
         <Reveal delay={180}>
