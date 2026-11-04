@@ -17,15 +17,9 @@ const sections = [
 
 export default function About() {
   return (
-    <section id="about" className="px-6 pb-28 pt-20 sm:pb-36 sm:pt-24">
+    <section id="about" className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
       <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <div className="flex items-baseline gap-6">
-            <span className="label text-red">01</span>
-            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Bio</h2>
-          </div>
-        </Reveal>
-        <div className="mt-14 grid gap-14 lg:grid-cols-12">
+        <div className="grid gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <p className="font-display text-2xl leading-snug tracking-tight text-ink sm:text-[1.7rem]">
               Pursuing dynamic roles across the fashion, beauty, and lifestyle
