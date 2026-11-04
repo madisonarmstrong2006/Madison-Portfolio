@@ -9,8 +9,8 @@ export default function Hero() {
         <Reveal className="shrink-0">
           <Image
             src="/images/madison-outline.png"
-            alt="Cutout photo of Madison Armstrong looking over her shoulder in sunglasses with a leather tote bag"
-            width={488}
+            alt="Cutout photo of Madison Armstrong looking over her shoulder in a fringe jacket and flared jeans"
+            width={345}
             height={1400}
             priority
             className="h-[calc(100svh-9.5rem)] min-h-[26rem] w-auto"
