@@ -14,10 +14,14 @@ export default function Home() {
       <div className="theme-dark">
       <Hero />
 
-      <section id="about" className="scroll-mt-14">
-        <PageHeader section eyebrow="About" title="About Me" />
-        <About />
+      </div>
+
+      <section id="about" className="scroll-mt-14 bg-red text-paper">
+        <PageHeader section onRed eyebrow="About" title="About Me" />
+        <About onRed />
       </section>
+
+      <div className="theme-dark">
 
       <section id="experience" className="scroll-mt-14 bg-cream">
         <PageHeader

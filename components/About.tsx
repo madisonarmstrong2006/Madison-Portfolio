@@ -7,7 +7,7 @@ const paragraphs = [
   "Outside of work, I enjoy photography, traveling, playing guitar, and planning activities that bring my family and friends together.",
 ];
 
-export default function About() {
+export default function About({ onRed }: { onRed?: boolean }) {
   return (
     <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
       <div className="mx-auto max-w-6xl">
@@ -17,8 +17,8 @@ export default function About() {
               <p
                 className={
                   i === 0
-                    ? "font-display text-2xl leading-snug tracking-tight text-ink sm:text-[1.7rem]"
-                    : "text-lg leading-relaxed text-ink-soft"
+                    ? `font-display text-2xl leading-snug tracking-tight sm:text-[1.7rem] ${onRed ? "text-paper" : "text-ink"}`
+                    : `text-lg leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`
                 }
               >
                 {p}
