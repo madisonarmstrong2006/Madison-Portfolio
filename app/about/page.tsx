@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageHeader eyebrow="About" title="Bio" />
+      <PageHeader eyebrow="About" title="About Me" />
       <About />
     </>
   );

@@ -16,7 +16,7 @@ export default function Home() {
       <Marquee />
 
       <section id="about" className="scroll-mt-14">
-        <PageHeader section eyebrow="About" title="Bio" />
+        <PageHeader section eyebrow="About" title="About Me" />
         <About />
       </section>
 

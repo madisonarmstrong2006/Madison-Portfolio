@@ -1,42 +1,30 @@
 import Reveal from "./Reveal";
 
-const sections = [
-  {
-    title: "Parsons Fashion Business Essentials",
-    body: "Through the Parsons Fashion Business Essentials course, I developed a capstone project centered around creating my own unique fashion brand. The project gave me the opportunity to explore the full process of developing a fashion brand, from creative direction and brand identity to market research, data analysis, strategy, sourcing, production, and logistics. It strengthened my ability to think both creatively and analytically.",
-  },
-  {
-    title: "Photography & Visual Storytelling",
-    body: "Photography has been a long-standing interest of mine and has strengthened my appreciation for visual storytelling. I am fascinated by the way composition, styling, lighting, and imagery can transform how a product or brand is perceived.",
-  },
-  {
-    title: "Curiosity & Perspective",
-    body: "I am an adventurous and curious person who is always looking for new experiences and opportunities to learn. I enjoy being pushed outside of my comfort zone because it challenges me to think critically, adapt to new situations, and approach problems from different perspectives.",
-  },
+const paragraphs = [
+  "I'm a student at the University of Colorado Boulder, studying Communication, Media, Design, and Information with a minor in Media Studies. I'm passionate about the intersection of creativity and business, with a particular interest in how brands use storytelling, visual expression, and thoughtful strategy to connect with their audiences.",
+  "My professional experience includes working as a personal intern to a merchandiser on the Staples Olympic Team, contributing to styling and marketing for ROAM Boulder Magazine, completing the Parsons Fashion Business Essentials course, and gaining experience in retail sales. Through these experiences, I've developed skills in merchandising, product sourcing and pricing, brand development, creative direction, marketing strategy, styling, and customer engagement.",
+  "I bring a creative and strategic perspective to my work, with an ability to learn quickly, collaborate with others, and approach new challenges with curiosity. I enjoy turning ideas into thoughtful concepts, whether through visual storytelling, brand development, marketing initiatives, or product strategy.",
+  "Outside of work, I enjoy photography, traveling, playing guitar, and planning activities that bring my family and friends together.",
 ];
 
 export default function About() {
   return (
-    <section id="about" className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
+    <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-14 lg:grid-cols-12">
-          <Reveal className="lg:col-span-5">
-            <p className="font-display text-2xl leading-snug tracking-tight text-ink sm:text-[1.7rem]">
-              Pursuing dynamic roles across the fashion, beauty, and lifestyle
-              industries with particular interests in merchandising, buying,
-              editorial work, and brand strategy.
-            </p>
-          </Reveal>
-          <div className="lg:col-span-7">
-            {sections.map((s, i) => (
-              <Reveal key={s.title} delay={i * 90}>
-                <div className="border-t border-ink/15 py-8 first:pt-0 first:border-t-0">
-                  <h3 className="label text-red">{s.title}</h3>
-                  <p className="mt-4 leading-relaxed text-ink-soft">{s.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+        <div className="max-w-3xl space-y-7">
+          {paragraphs.map((p, i) => (
+            <Reveal key={i} delay={i * 90}>
+              <p
+                className={
+                  i === 0
+                    ? "font-display text-2xl leading-snug tracking-tight text-ink sm:text-[1.7rem]"
+                    : "text-lg leading-relaxed text-ink-soft"
+                }
+              >
+                {p}
+              </p>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
