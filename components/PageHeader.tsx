@@ -8,7 +8,7 @@ export default function PageHeader({ eyebrow, title, intro, onRed, compact, sect
         <p className={`label ${onRed ? "text-paper/70" : "text-red"}`}>{eyebrow}</p>
       </Reveal>
       <Reveal delay={100}>
-        <Heading className={`font-display leading-[0.98] tracking-[-0.02em] ${compact ? "mt-4 text-5xl sm:text-6xl" : "mt-6 text-6xl sm:text-8xl"}`}>{title}</Heading>
+        <Heading className={`font-display leading-[0.98] tracking-[-0.02em] mt-4 ${compact ? "text-5xl sm:text-6xl" : "text-[2.625rem] sm:text-[3.28rem]"}`}>{title}</Heading>
       </Reveal>
       {intro ? (
         <Reveal delay={180}>

@@ -7,7 +7,7 @@ export default function Contact({ section }: { section?: boolean }) {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label text-red-bright">Contact</p>
-          <Heading className="font-display mt-6 text-6xl leading-[0.98] tracking-[-0.02em] sm:text-8xl">Say hello</Heading>
+          <Heading className="font-display mt-6 text-[2.625rem] leading-[0.98] tracking-[-0.02em] sm:text-[3.28rem]">Say hello</Heading>
         </Reveal>
         <Reveal delay={100}>
           <p className="font-display mt-12 max-w-3xl text-3xl leading-tight tracking-tight sm:text-5xl">

@@ -78,7 +78,7 @@ export default function Experience() {
         <Reveal>
           <div className="flex items-baseline gap-6">
             <span className="label text-red">01</span>
-            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Experience</h2>
+            <h2 className="font-display text-[2.625rem] tracking-tight sm:text-[3.28rem]">Experience</h2>
           </div>
         </Reveal>
         <div className="mt-14">
@@ -91,7 +91,7 @@ export default function Experience() {
         <Reveal>
           <div id="education" className="mt-24 flex items-baseline gap-6">
             <span className="label text-red">02</span>
-            <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Education</h2>
+            <h2 className="font-display text-[2.625rem] tracking-tight sm:text-[3.28rem]">Education</h2>
           </div>
         </Reveal>
         <div className="mt-14">
