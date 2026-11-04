@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ThemeScope from "@/components/ThemeScope";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -33,9 +34,11 @@ export default function RootLayout({
         <a href="#main" className="label sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-ink focus:px-4 focus:py-3 focus:text-paper">
           Skip to content
         </a>
-        <Nav />
-        <main id="main">{children}</main>
-        <Footer />
+        <ThemeScope>
+          <Nav />
+          <main id="main">{children}</main>
+          <Footer />
+        </ThemeScope>
       </body>
     </html>
   );
