@@ -6,9 +6,6 @@ export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen flex-col px-6 pb-10 pt-28 sm:pt-32">
       <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-between gap-10">
-        <Reveal>
-          <p className="label text-red">Merchandising &middot; Editorial &middot; Styling &middot; Buying</p>
-        </Reveal>
         <Reveal delay={120}>
           <div className="font-display flex items-end gap-[0.14em] text-[13.5vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(11vw,17vh)] lg:text-[min(9.5rem,17vh)]">
             <Image
@@ -17,7 +14,7 @@ export default function Hero() {
               width={345}
               height={1400}
               priority
-              className="h-[2.7em] w-auto shrink-0"
+              className="h-[3.3em] w-auto shrink-0"
             />
             <h1>
               Madison
