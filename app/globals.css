@@ -25,7 +25,7 @@ body {
 /* Dark scheme matching the Contact section: charcoal background, warm white text, bright red accents. */
 .theme-dark {
   --color-paper: #161412;
-  --color-cream: #1e1b18;
+  --color-cream: #161412;
   --color-ink: #f4f0e9;
   --color-ink-soft: rgba(244, 240, 233, 0.75);
   --color-red: #a81e1e;
