@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Reveal from "./Reveal";
 
 export default function Hero() {
@@ -18,7 +17,7 @@ export default function Hero() {
         </Reveal>
         <div className="flex min-w-0 flex-col gap-8 sm:gap-10">
           <Reveal delay={120}>
-            <h1 className="font-display text-[11vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(9vw,15vh)] lg:text-[min(9.5rem,15vh)]">
+            <h1 className="font-display text-[12vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(10.5vw,18vh)] lg:text-[min(11rem,18vh)]">
               Madison
               <br />
               <span className="italic text-red">Armstrong</span>
@@ -32,15 +31,6 @@ export default function Hero() {
                 fashion, beauty, and consumer brands that connect with
                 audiences.
               </p>
-            </Reveal>
-            <Reveal delay={320}>
-              <Link
-                href="/projects"
-                className="label group inline-flex shrink-0 items-center gap-3 text-ink hover:text-red transition-colors"
-              >
-                View the projects
-                <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
-              </Link>
             </Reveal>
           </div>
         </div>
