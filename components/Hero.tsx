@@ -47,6 +47,24 @@ export default function Hero() {
           </p>
         </Reveal>
       </div>
+      <a
+        href="#about"
+        aria-label="Scroll down to see more"
+        className="absolute bottom-3 left-1/2 -translate-x-1/2 text-ink transition-colors hover:text-red"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          className="h-7 w-7 animate-bounce"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 4v15M5.5 12.5 12 19l6.5-6.5" />
+        </svg>
+      </a>
       <p className="absolute bottom-6 right-6 hidden label text-grey md:block">Portfolio &middot; 2026</p>
     </section>
   );
