@@ -18,19 +18,6 @@ export default function Home() {
         <About onRed />
       </section>
 
-      <div className="theme-dark">
-
-      <section id="experience" className="scroll-mt-14 bg-cream">
-        <PageHeader
-          section
-          eyebrow="Experience"
-          title={<>Work &amp; <span className="italic text-red">education</span></>}
-          intro="Supporting merchandise strategy for Team USA and the LA28 Olympic Merchandise Director, completing the Parsons Fashion Business Essentials course, and driving sales and client engagement for leading retail brands. These hands-on roles have given me a comprehensive understanding of what connects products to consumers, blending creative direction with retail analytics."
-        />
-        <Experience />
-      </section>
-      </div>
-
       <section id="projects" className="scroll-mt-14 bg-red text-paper">
         <div style={{ zoom: 0.875 }}>
           <PageHeader
@@ -57,6 +44,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="theme-dark">
+
+      <section id="experience" className="scroll-mt-14 bg-cream">
+        <PageHeader
+          section
+          eyebrow="Experience"
+          title={<>Work &amp; <span className="italic text-red">education</span></>}
+          intro="Supporting merchandise strategy for Team USA and the LA28 Olympic Merchandise Director, completing the Parsons Fashion Business Essentials course, and driving sales and client engagement for leading retail brands. These hands-on roles have given me a comprehensive understanding of what connects products to consumers, blending creative direction with retail analytics."
+        />
+        <Experience />
+      </section>
+      </div>
 
       <Contact section />
     </>
