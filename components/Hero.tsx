@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="relative pr-[8vw] sm:pr-[10vw] lg:pr-24">
           <Reveal delay={100} className="relative z-10">
             <h1
-              className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em] text-[7vw] sm:text-[min(5.6vw,11vh)] lg:text-[min(5rem,11vh)]"
+              className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em] text-[8vw] sm:text-[min(6.6vw,13vh)] lg:text-[min(6.25rem,13vh)]"
               style={{ fontStretch: "125%", fontVariationSettings: '"wdth" 125' }}
             >
               <span className="relative block w-fit text-ink">
