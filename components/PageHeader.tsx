@@ -3,7 +3,8 @@ import Reveal from "./Reveal";
 export default function PageHeader({ eyebrow, title, intro, onRed, compact, section }: { section?: boolean; eyebrow: string; title: React.ReactNode; intro?: string; onRed?: boolean; compact?: boolean }) {
   const Heading = section ? "h2" : "h1";
   return (
-    <div className={`mx-auto max-w-6xl px-6 ${section ? "pt-24 sm:pt-28" : compact ? "pt-24 sm:pt-28" : "pt-36 sm:pt-44"}`}>
+    <div className="px-6">
+    <div className={`mx-auto max-w-6xl ${section ? "pt-24 sm:pt-28" : compact ? "pt-24 sm:pt-28" : "pt-36 sm:pt-44"}`}>
       <Reveal>
         <p className={`label ${onRed ? "text-paper/70" : "text-red"}`}>{eyebrow}</p>
       </Reveal>
@@ -15,6 +16,7 @@ export default function PageHeader({ eyebrow, title, intro, onRed, compact, sect
           <p className={`${compact ? "mt-5" : "mt-8"} max-w-xl text-lg leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`}>{intro}</p>
         </Reveal>
       ) : null}
+    </div>
     </div>
   );
 }

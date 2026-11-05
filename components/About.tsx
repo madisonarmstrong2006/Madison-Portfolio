@@ -9,8 +9,8 @@ const paragraphs = [
 
 export default function About({ onRed }: { onRed?: boolean }) {
   return (
-    <section className="pb-28 pt-16 sm:pb-36 sm:pt-20">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
+      <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl space-y-7">
           {paragraphs.map((p, i) => (
             <Reveal key={i} delay={i * 90}>
