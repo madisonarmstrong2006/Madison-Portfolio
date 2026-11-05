@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <Hero />
 
-      <section id="about" className="scroll-mt-14 bg-red text-paper">
-        <PageHeader section onRed eyebrow="About" title="About Me" />
-        <About onRed />
+      <section id="about" className="theme-dark scroll-mt-14">
+        <PageHeader section eyebrow="About" title="About Me" />
+        <About />
       </section>
 
       <section id="projects" className="scroll-mt-14 bg-red text-paper">
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
       </div>
 
-      <Contact section />
+      <Contact section onRed />
     </>
   );
 }

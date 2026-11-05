@@ -14,11 +14,11 @@ export default function Nav() {
   const pathname = usePathname();
   return (
     <header className={`fixed inset-x-0 top-0 z-50 border-b bg-paper border-ink/10`}>
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-6 py-4">
+      <nav className="flex w-full items-center justify-between gap-3 px-6 py-4 sm:px-10">
         <Link
           href="/"
           aria-label="Madison Armstrong, home"
-          className="font-display whitespace-nowrap text-sm tracking-tight hover:text-red transition-colors sm:text-lg"
+          className="label whitespace-nowrap text-ink transition-colors hover:text-red max-sm:text-[9.5px]! max-sm:tracking-[0.04em]!"
         >
           <span className="max-[430px]:hidden">Madison Armstrong</span>
           <span className="min-[431px]:hidden">M. Armstrong</span>
