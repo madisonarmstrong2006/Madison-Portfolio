@@ -4,11 +4,11 @@ import Reveal from "./Reveal";
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pb-10 pt-28">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-center">
-        <div className="relative pr-[8vw] sm:pr-[10vw] lg:pr-24">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-start">
+        <div className="relative">
           <Reveal delay={100} className="relative z-10">
             <h1
-              className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em] text-[8vw] sm:text-[min(6.6vw,13vh)] lg:text-[min(6.25rem,13vh)]"
+              className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em] text-[7vw] sm:text-[min(6.6vw,13vh)] lg:text-[min(6.25rem,13vh)]"
               style={{ fontStretch: "125%", fontVariationSettings: '"wdth" 125' }}
             >
               <span className="relative block w-fit text-ink">
@@ -20,7 +20,7 @@ export default function Hero() {
                   width={871}
                   height={1600}
                   priority
-                  className="pointer-events-none absolute left-[calc(100%-6vw)] top-1/2 -z-10 h-[46svh] w-auto max-w-none -translate-y-[42%] sm:left-full sm:h-[min(68svh,40rem)]"
+                  className="pointer-events-none absolute left-[calc(100%+0.25em-var(--ih)*0.1414)] top-1/2 -z-10 h-[var(--ih)] w-auto max-w-none -translate-y-[42%] [--ih:36svh] sm:[--ih:min(68svh,40rem)]"
                 />
               </span>
               <span className="block text-red">Armstrong</span>
