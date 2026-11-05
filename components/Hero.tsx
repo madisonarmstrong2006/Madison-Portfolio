@@ -3,38 +3,37 @@ import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative flex min-h-screen flex-col px-6 pb-10 pt-28">
-      <div className="mx-auto flex w-full max-w-6xl flex-1 items-end gap-5 sm:gap-10 lg:gap-14">
-        <Reveal className="shrink-0">
+    <section id="top" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pb-10 pt-28">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-center">
+        <Reveal delay={100} className="relative z-10 shrink-0">
+          <h1
+            className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em] text-[7vw] sm:text-[min(5.6vw,11vh)] lg:text-[min(5rem,11vh)]"
+            style={{ fontStretch: "125%", fontVariationSettings: '"wdth" 125' }}
+          >
+            <span className="block text-ink">Madison</span>
+            <span className="block text-red">Armstrong</span>
+          </h1>
+        </Reveal>
+        <Reveal className="relative -ml-[40vw] shrink-0 sm:-ml-[9vw] lg:-ml-[7rem]">
           <Image
-            src="/images/madison-outline.png"
-            alt="Cutout photo of Madison Armstrong looking over her shoulder with a leather tote bag"
-            width={489}
-            height={1400}
+            src="/images/madison-hero.png"
+            alt="Cutout photo of Madison Armstrong walking away in a fringe jacket and flared jeans"
+            width={871}
+            height={1600}
             priority
-            className="h-[calc(100svh-9.5rem)] min-h-[26rem] w-auto"
+            className="h-[38svh] w-auto sm:h-[min(62svh,34rem)]"
           />
         </Reveal>
-        <div className="flex min-w-0 flex-col gap-8 sm:gap-10">
-          <Reveal delay={120}>
-            <h1 className="font-display text-[12vw] leading-[0.95] tracking-[-0.02em] sm:text-[min(10.5vw,18vh)] lg:text-[min(11rem,18vh)]">
-              Madison
-              <br />
-              <span className="italic text-red">Armstrong</span>
-            </h1>
-          </Reveal>
-          <div className="flex flex-col gap-6 border-t border-ink/15 pt-6 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
-            <Reveal delay={240}>
-              <p className="max-w-md text-base leading-relaxed text-ink-soft sm:text-lg">
-                Creative, passionate, and driven. Building a career where
-                creativity and strategy come together to shape compelling
-                fashion, beauty, and consumer brands that connect with
-                audiences.
-              </p>
-            </Reveal>
-          </div>
-        </div>
       </div>
+      <Reveal delay={240}>
+        <p className="mx-auto mt-10 max-w-6xl text-base leading-relaxed text-ink-soft sm:text-lg">
+          <span className="block max-w-md">
+            Creative, passionate, and driven. Building a career where
+            creativity and strategy come together to shape compelling fashion,
+            beauty, and consumer brands that connect with audiences.
+          </span>
+        </p>
+      </Reveal>
       <p className="absolute bottom-6 right-6 hidden label text-grey md:block">Portfolio &middot; 2026</p>
     </section>
   );

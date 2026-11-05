@@ -9,6 +9,7 @@
   --color-red-bright: #a81e1e;
   --color-grey: #8b857e;
   --font-display: var(--font-fraunces), Georgia, serif;
+  --font-wide: var(--font-archivo), "Arial Black", sans-serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 

@@ -11,10 +11,7 @@ import { projects } from "@/lib/projects";
 export default function Home() {
   return (
     <>
-      <div className="theme-dark">
       <Hero />
-
-      </div>
 
       <section id="about" className="scroll-mt-14 bg-red text-paper">
         <PageHeader section onRed eyebrow="About" title="About Me" />

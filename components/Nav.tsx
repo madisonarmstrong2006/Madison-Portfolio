@@ -14,7 +14,7 @@ export default function Nav() {
   const pathname = usePathname();
   const onHome = pathname === "/";
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 border-b ${onHome ? "theme-dark border-paper/10" : "bg-paper border-ink/10"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 border-b bg-paper border-ink/10`}>
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-6 py-4">
         <Link
           href="/"
