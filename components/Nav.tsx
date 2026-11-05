@@ -18,7 +18,7 @@ export default function Nav() {
         <Link
           href="/"
           aria-label="Madison Armstrong, home"
-          className="label whitespace-nowrap text-ink transition-colors hover:text-red max-sm:text-[9.5px]! max-sm:tracking-[0.04em]!"
+          className="label block whitespace-nowrap leading-none text-ink transition-colors hover:text-red max-sm:text-[9.5px]! max-sm:tracking-[0.04em]!"
         >
           <span className="max-[430px]:hidden">Madison Armstrong</span>
           <span className="min-[431px]:hidden">M. Armstrong</span>
@@ -31,7 +31,7 @@ export default function Nav() {
                 <Link
                   href={l.href}
                   aria-current={active ? "page" : undefined}
-                  className={`label max-sm:text-[9.5px]! max-sm:tracking-[0.04em]! transition-colors hover:text-red ${active ? "text-red" : "text-ink-soft"}`}
+                  className={`label block leading-none max-sm:text-[9.5px]! max-sm:tracking-[0.04em]! transition-colors hover:text-red ${active ? "text-red" : "text-ink-soft"}`}
                 >
                   {l.label}
                 </Link>
