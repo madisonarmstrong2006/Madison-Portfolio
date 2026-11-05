@@ -9,7 +9,7 @@ import Reveal from "./Reveal";
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pb-8 pt-20 sm:px-10">
-      <div className="relative mx-auto w-full [--f:min(9vw,8.5vh)] [--h:calc(var(--f)*7.7)] sm:[--f:min(10vw,20vh)] sm:[--h:min(calc(var(--f)*7.7),80svh)]">
+      <div className="relative mx-auto w-full -translate-y-[4vh] [--f:min(9vw,8.5vh)] [--h:calc(var(--f)*7.7)] sm:[--f:min(10vw,20vh)] sm:[--h:min(calc(var(--f)*7.7),80svh)]">
         <Reveal delay={100} className="relative z-10">
           <h1
             className="font-wide font-black uppercase leading-[1.05] tracking-[0.01em]"
