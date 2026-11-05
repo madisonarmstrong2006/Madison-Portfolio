@@ -9,17 +9,13 @@ const paragraphs = [
 
 export default function About({ onRed }: { onRed?: boolean }) {
   return (
-    <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
-      <div className="mx-auto max-w-6xl">
+    <section className="pb-28 pt-16 sm:pb-36 sm:pt-20">
+      <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl space-y-7">
           {paragraphs.map((p, i) => (
             <Reveal key={i} delay={i * 90}>
               <p
-                className={
-                  i === 0
-                    ? `font-display text-2xl leading-snug tracking-tight sm:text-[1.7rem] ${onRed ? "text-paper" : "text-ink"}`
-                    : `text-lg leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`
-                }
+                className={`text-lg leading-relaxed ${onRed ? "text-paper/85" : "text-ink-soft"}`}
               >
                 {p}
               </p>
