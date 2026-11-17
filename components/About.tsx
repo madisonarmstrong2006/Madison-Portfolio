@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const paragraphs = [
@@ -7,10 +8,10 @@ const paragraphs = [
   "Outside of work, I enjoy photography, traveling, playing guitar, and planning activities that bring my family and friends together.",
 ];
 
-export default function About({ onRed }: { onRed?: boolean }) {
+export default function About({ onRed, photo }: { onRed?: boolean; photo?: boolean }) {
   return (
     <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
-      <div className="mx-auto max-w-6xl">
+      <div className={`mx-auto max-w-6xl ${photo ? "grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-stretch lg:gap-16" : ""}`}>
         <div className="max-w-3xl space-y-7">
           {paragraphs.map((p, i) => (
             <Reveal key={i} delay={i * 90}>
@@ -22,6 +23,19 @@ export default function About({ onRed }: { onRed?: boolean }) {
             </Reveal>
           ))}
         </div>
+        {photo && (
+          <Reveal delay={200} className="mx-auto w-full max-w-sm lg:mx-0 lg:h-full lg:max-w-none">
+            <div className="relative aspect-[475/734] w-full overflow-hidden lg:aspect-auto lg:h-full">
+              <Image
+                src="/images/madison-paper.png"
+                alt="Black and white photo of Madison Armstrong in white sunglasses with a leather tote"
+                width={475}
+                height={734}
+                className="h-full w-full object-cover object-[50%_60%]"
+              />
+            </div>
+          </Reveal>
+        )}
       </div>
     </section>
   );

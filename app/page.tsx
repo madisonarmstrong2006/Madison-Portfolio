@@ -15,7 +15,7 @@ export default function Home() {
 
       <section id="about" className="theme-dark scroll-mt-14">
         <PageHeader section eyebrow="About" title="About Me" />
-        <About />
+        <About photo />
       </section>
 
       <section id="projects" className="scroll-mt-14 bg-red text-paper">
