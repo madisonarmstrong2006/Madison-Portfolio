@@ -11,7 +11,7 @@ const paragraphs = [
 export default function About({ onRed, photo }: { onRed?: boolean; photo?: boolean }) {
   return (
     <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
-      <div className={`mx-auto max-w-6xl ${photo ? "grid gap-8 sm:grid-cols-[minmax(0,1fr)_clamp(10rem,32vw,22rem)] sm:items-stretch sm:gap-10 lg:gap-16" : ""}`}>
+      <div className={`mx-auto max-w-6xl ${photo ? "grid gap-8 sm:grid-cols-[minmax(0,1fr)_clamp(10rem,32vw,22rem)] sm:items-center sm:gap-10 lg:gap-16" : ""}`}>
         <div className="max-w-3xl space-y-7">
           {paragraphs.map((p, i) => (
             <Reveal key={i} delay={i * 90}>
@@ -24,14 +24,14 @@ export default function About({ onRed, photo }: { onRed?: boolean; photo?: boole
           ))}
         </div>
         {photo && (
-          <Reveal delay={200} className="mx-auto w-full max-w-sm sm:mx-0 sm:h-full sm:max-w-none">
-            <div className="relative aspect-[475/734] w-full overflow-hidden sm:aspect-auto sm:h-full">
+          <Reveal delay={200} className="mx-auto w-full max-w-sm sm:mx-0 sm:max-w-none">
+            <div className="relative w-full">
               <Image
                 src="/images/madison-paper.png"
                 alt="Black and white photo of Madison Armstrong in white sunglasses with a leather tote"
                 width={475}
                 height={734}
-                className="h-full w-full object-cover object-[50%_60%]"
+                className="h-auto w-full"
               />
             </div>
           </Reveal>
