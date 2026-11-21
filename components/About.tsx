@@ -26,7 +26,7 @@ export default function About({ onRed, photo, header }: { onRed?: boolean; photo
         </div>
         {photo && (
           <Reveal delay={200} className="mx-auto w-full max-w-sm sm:relative sm:mx-0 sm:max-w-none">
-            <div className="relative w-full sm:absolute sm:inset-0">
+            <div className="relative w-full sm:absolute sm:inset-x-0 sm:bottom-0 sm:top-[2.03rem]">
               <Image
                 src="/images/madison-polaroid-clean.png"
                 alt="Instant-film style photo of Madison Armstrong in black and white on a red background, in white sunglasses with a leather tote"
