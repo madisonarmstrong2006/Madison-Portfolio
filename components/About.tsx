@@ -8,7 +8,7 @@ const paragraphs = [
 
 export default function About({ onRed, photo }: { onRed?: boolean; photo?: boolean }) {
   return (
-    <section className="px-6 pb-28 pt-16 sm:pb-36 sm:pt-20">
+    <section className="px-6 pb-16 pt-6 sm:pb-20 sm:pt-8">
       <div className={`mx-auto max-w-6xl ${photo ? "grid gap-8 sm:grid-cols-[minmax(0,1fr)_clamp(10rem,32vw,22rem)] sm:items-center sm:gap-10 lg:gap-16" : ""}`}>
         <div className="max-w-3xl space-y-7">
           {paragraphs.map((p, i) => (
