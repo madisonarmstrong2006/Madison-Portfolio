@@ -14,8 +14,7 @@ export default function Home() {
       <Hero />
 
       <section id="about" className="theme-dark scroll-mt-14">
-        <PageHeader section eyebrow="About" title="About Me" />
-        <About photo />
+        <About photo header={<PageHeader bare section eyebrow="About" title="About Me" />} />
       </section>
 
       <section id="projects" className="scroll-mt-14 bg-red text-paper">

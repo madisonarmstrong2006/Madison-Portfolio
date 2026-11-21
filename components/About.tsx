@@ -6,11 +6,13 @@ const paragraphs = [
   "Through experience in merchandising, styling, brand development, and retail, I've built a foundation in creative direction, marketing strategy, and customer engagement. I approach my work with curiosity, a collaborative mindset, and a focus on turning ideas into well-considered concepts. Outside of work, I'm drawn to photography, travel, playing guitar, and time with family and friends.",
 ];
 
-export default function About({ onRed, photo }: { onRed?: boolean; photo?: boolean }) {
+export default function About({ onRed, photo, header }: { onRed?: boolean; photo?: boolean; header?: React.ReactNode }) {
   return (
-    <section className="px-6 pb-16 pt-6 sm:pb-20 sm:pt-8">
-      <div className={`mx-auto max-w-6xl ${photo ? "grid gap-8 sm:grid-cols-[minmax(0,1fr)_clamp(10rem,32vw,22rem)] sm:items-stretch sm:gap-10 lg:gap-16" : ""}`}>
-        <div className="max-w-3xl space-y-7">
+    <section className={`px-6 pb-16 ${header ? "pt-24 sm:pb-20 sm:pt-28" : "pt-6 sm:pb-20 sm:pt-8"}`}>
+      <div className={`mx-auto max-w-6xl ${photo ? "grid gap-8 sm:grid-cols-[minmax(0,1fr)_clamp(10rem,32vw,26rem)] sm:items-stretch sm:gap-10 lg:gap-16" : ""}`}>
+        <div className="max-w-3xl">
+          {header}
+          <div className={`space-y-7 ${header ? "mt-6 sm:mt-8" : ""}`}>
           {paragraphs.map((p, i) => (
             <Reveal key={i} delay={i * 90}>
               <p
@@ -20,6 +22,7 @@ export default function About({ onRed, photo }: { onRed?: boolean; photo?: boole
               </p>
             </Reveal>
           ))}
+          </div>
         </div>
         {photo && (
           <Reveal delay={200} className="mx-auto w-full max-w-sm sm:relative sm:mx-0 sm:max-w-none">
