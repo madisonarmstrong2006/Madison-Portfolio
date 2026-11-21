@@ -2,10 +2,8 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 
 const paragraphs = [
-  "I'm a student at the University of Colorado Boulder, studying Communication, Media, Design, and Information with a minor in Media Studies. I'm passionate about the intersection of creativity and business, with a particular interest in how brands use storytelling, visual expression, and thoughtful strategy to connect with their audiences.",
-  "My professional experience includes working as a personal intern to a merchandiser on the Staples Olympic Team, contributing to styling and marketing for ROAM Boulder Magazine, completing the Parsons Fashion Business Essentials course, and gaining experience in retail sales. Through these experiences, I've developed skills in merchandising, product sourcing and pricing, brand development, creative direction, marketing strategy, styling, and customer engagement.",
-  "I bring a creative and strategic perspective to my work, with an ability to learn quickly, collaborate with others, and approach new challenges with curiosity. I enjoy turning ideas into thoughtful concepts, whether through visual storytelling, brand development, marketing initiatives, or product strategy.",
-  "Outside of work, I enjoy photography, traveling, playing guitar, and planning activities that bring my family and friends together.",
+  "I'm a student at the University of Colorado Boulder studying Communication, Media, Design, and Information, with a minor in Media Studies. My interests center on the intersection of creativity and business, particularly how brands use storytelling, visual expression, and strategy to connect with their audiences.",
+  "Through experience in merchandising, styling, brand development, and retail, I've built a foundation in creative direction, marketing strategy, and customer engagement. I approach my work with curiosity, a collaborative mindset, and a focus on turning ideas into well-considered concepts. Outside of work, I'm drawn to photography, travel, playing guitar, and time with family and friends.",
 ];
 
 export default function About({ onRed, photo }: { onRed?: boolean; photo?: boolean }) {
