@@ -32,7 +32,7 @@ export default function About({ onRed, photo, header }: { onRed?: boolean; photo
                 alt="Instant-film style photo of Madison Armstrong in black and white on a red background, in white sunglasses with a leather tote"
                 width={1508}
                 height={2381}
-                className="h-auto w-full sm:h-full sm:object-contain sm:object-right"
+                className="h-auto w-full sm:h-full sm:object-contain sm:object-left"
               />
             </div>
           </Reveal>
